@@ -1,0 +1,72 @@
+# -----------------------------
+# Build directories
+# -----------------------------
+build/
+bin/
+out/
+dist/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# CTest
+Testing/
+CTestTestfile.cmake
+
+# -----------------------------
+# Compiled binaries & objects
+# -----------------------------
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.a
+*.lib
+
+# -----------------------------
+# IDE / Editor files
+# -----------------------------
+
+# VS Code
+.vscode/
+
+# CLion / JetBrains
+.idea/
+cmake-build-*/
+
+# Visual Studio
+*.vcxproj*
+*.sln
+*.user
+*.filters
+
+# MacOS
+.DS_Store
+
+# Linux
+*~
+
+# -----------------------------
+# Logs & temp files
+# -----------------------------
+*.log
+*.tmp
+
+# -----------------------------
+# Environment / secrets
+# -----------------------------
+.env
+
+# -----------------------------
+# Raylib-specific (optional)
+# -----------------------------
+# If you build raylib from source inside your project:
+raylib/build/
+raylib/src/*.o
