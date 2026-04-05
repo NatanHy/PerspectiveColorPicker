@@ -289,7 +289,7 @@ int main() {
 
     GUIState state(std::move(parser));
 
-    Renderer renderer(1200, 1000, "Texture Viewer");
+    Renderer renderer(1600, 1200, "Texture Viewer");
     renderer.textureBrightness = 0.8;
 
     rlImGuiSetup(true); // enable docking
