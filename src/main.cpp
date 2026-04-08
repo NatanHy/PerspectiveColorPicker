@@ -13,9 +13,9 @@
 #include "filter.h"
 
 #define W_TEST 160
-#define H_TEST 120
+#define H_TEST 67
 
-constexpr std::array<std::string, NUM_QUALIFIERS> qualifiers = QUALIFIERS;
+constexpr std::array<std::string_view, NUM_TAGS> tags = TAGS;
 
 enum class View {
     ColorPicker,
@@ -29,7 +29,7 @@ class GUIState {
         m_parser(parser),
         m_optimizer(Optimizer(&m_parser))
     {
-        checkedQualifiers.fill(true);
+        checkedTags.fill(true);
     }
 
     void update() {
@@ -96,7 +96,7 @@ class GUIState {
     float color[3] = {1.0f, 0.0f, 0.0f};
     std::string imgPath;
 
-    std::array<bool, NUM_QUALIFIERS> checkedQualifiers;
+    std::array<bool, NUM_TAGS> checkedTags;
     
     private:
     void updateParser() {
@@ -110,10 +110,10 @@ class GUIState {
             changed = true;
         }
 
-        auto newQualifiers = filterSelected<NUM_QUALIFIERS>(checkedQualifiers, qualifiers);
+        auto newTags = filterSelected<NUM_TAGS>(checkedTags, tags);
 
-        if (newQualifiers != m_parser.filter.qualifiers()) {
-            m_parser.filter.setQualifiers(newQualifiers);
+        if (newTags != m_parser.filter.tags()) {
+            m_parser.filter.setTags(newTags);
             changed = true;
         }
 
@@ -200,20 +200,20 @@ void drawColorPicker(Renderer& renderer, GUIState& state) {
     }
     ImGui::End();
     
-    ImGui::Begin("Qualifiers");
+    ImGui::Begin("Tags");
 
         if (ImGui::Button("All On"))
         {
-            state.checkedQualifiers.fill(true);
+            state.checkedTags.fill(true);
         }
 
         if (ImGui::Button("All Off"))
         {
-            state.checkedQualifiers.fill(false);
+            state.checkedTags.fill(false);
         }
 
-        for (int i = 0; i < NUM_QUALIFIERS; ++i) {
-            ImGui::Checkbox(qualifiers[i].c_str(), &state.checkedQualifiers[i]);
+        for (int i = 0; i < NUM_TAGS; ++i) {
+            ImGui::Checkbox(tags[i].data(), &state.checkedTags[i]);
         }
     ImGui::End();
 }
@@ -289,7 +289,7 @@ int main() {
 
     GUIState state(std::move(parser));
 
-    Renderer renderer(1200, 1000, "Texture Viewer");
+    Renderer renderer(1600, 1000, "Texture Viewer");
     renderer.textureBrightness = 0.8;
 
     rlImGuiSetup(true); // enable docking

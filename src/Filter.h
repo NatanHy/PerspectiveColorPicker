@@ -12,28 +12,32 @@
 #include "ColorMatching.h"
 #include "utils.h"
 
-#define NUM_QUALIFIERS 94
-#define QUALIFIERS {"all", "amethyst", "back", "bamboo", "bar", "bars", "base", "beacon", "body", "bottom", "cactus", "cactus_top", "calibrated_side", "candle", "cocoa", "content", "crop", "cross", "cross_emissive", "dirt", "down", "east", "edge", "end", "end_rod", "eye", "fan", "fire", "flower", "flowerbed", "flowerpot", "front", "glass", "glow_lichen", "hook", "inner_top", "inside", "lantern", "leaf", "leg", "lever", "line", "lit", "lit_log", "lock", "log", "north", "obsidian", "overlay", "pane", "particle", "pattern", "pitcher_bottom", "pitcher_side", "pitcher_top", "pivot", "plant", "platform", "portal", "post", "propagule", "rail", "round", "sapling", "saw", "sculk_vein", "side", "sides", "slab", "south", "stage_1", "stage_2", "stage_3_bottom", "stage_3_top", "stage_4_bottom", "stage_4_top", "stand", "stem", "tendrils", "tentacles", "texture", "tip", "top", "torch", "tripwire", "unlit", "unsticky", "up", "upperstem", "vine", "wall", "west", "wood", "wool"}
-#define QUALIFIER_PATH "pre_parsing/texture_qualifiers.txt"
+// #define NUM_QUALIFIERS 94
+// #define QUALIFIERS {"all", "amethyst", "back", "bamboo", "bar", "bars", "base", "beacon", "body", "bottom", "cactus", "cactus_top", "calibrated_side", "candle", "cocoa", "content", "crop", "cross", "cross_emissive", "dirt", "down", "east", "edge", "end", "end_rod", "eye", "fan", "fire", "flower", "flowerbed", "flowerpot", "front", "glass", "glow_lichen", "hook", "inner_top", "inside", "lantern", "leaf", "leg", "lever", "line", "lit", "lit_log", "lock", "log", "north", "obsidian", "overlay", "pane", "particle", "pattern", "pitcher_bottom", "pitcher_side", "pitcher_top", "pivot", "plant", "platform", "portal", "post", "propagule", "rail", "round", "sapling", "saw", "sculk_vein", "side", "sides", "slab", "south", "stage_1", "stage_2", "stage_3_bottom", "stage_3_top", "stage_4_bottom", "stage_4_top", "stand", "stem", "tendrils", "tentacles", "texture", "tip", "top", "torch", "tripwire", "unlit", "unsticky", "up", "upperstem", "vine", "wall", "west", "wood", "wool"}
+// #define QUALIFIER_PATH "pre_parsing/texture_qualifiers.txt"
+
+#define NUM_TAGS 9
+#define TAGS {"full block", "top", "bottom", "directional", "cross", "entity", "animated", "TODO", "unused"}
+#define TAGS_PATH "pre_parsing/texture_tags.csv"
 
 class Filter {
 public:
     Filter() :
-        m_qualifiers(QUALIFIERS)
+        m_tags(TAGS)
     {
         ensureLoaded();
     }
 
-    const std::unordered_set<std::string> qualifiers() const {
-        return m_qualifiers;
+    const std::unordered_set<std::string> tags() const {
+        return m_tags;
     }
 
-    void setQualifiers(std::unordered_set<std::string> qualifiers) {
-        m_qualifiers = qualifiers;
+    void setTags(std::unordered_set<std::string> tags) {
+        m_tags = tags;
         
-        for (const auto& x : QUALIFIERS) {
-            if (!qualifiers.count(x)) {
-                m_disallowedQualifiers.insert(x);
+        for (const auto& x : TAGS) {
+            if (!tags.count(x)) {
+                m_disallowedTags.insert(x);
             }
         }
     }
@@ -51,9 +55,9 @@ public:
 
         std::string filename = getFilename(textureInfo.textureData.path);
 
-        auto texture_qualifiers = m_data[filename];
-        for (const auto q: m_disallowedQualifiers) {
-            if (texture_qualifiers.count(q)) {
+        auto texture_tags = m_data[filename];
+        for (const auto q: m_disallowedTags) {
+            if (texture_tags.count(q)) {
                 return false;
             }
         }
@@ -69,7 +73,7 @@ public:
 
 private:
     static void loadData() {
-        parseFile(QUALIFIER_PATH);
+        parseTagsFile(TAGS_PATH);
     }
 
     static void ensureLoaded() {
@@ -79,7 +83,7 @@ private:
         }
     }
 
-    static void parseFile(const std::string& path) {
+    static void parseTagsFile(const std::string& path) {
         std::ifstream file(path);
 
         if (!file.is_open()) {
@@ -93,37 +97,36 @@ private:
             std::istringstream iss(line);
 
             std::string filename;
-            size_t num_items;
-            std::string items_str;
+            std::string num_items_str;
 
-            // Read filename and number
-            if (!(iss >> filename >> num_items)) {
-                throw std::runtime_error("Skipping malformed line: " + line);
+            // Read filename
+            if (!std::getline(iss, filename, ',')) {
+                throw std::runtime_error("Malformed line: " + line);
             }
+
+            // Read number of items
+            if (!std::getline(iss, num_items_str, ',')) {
+                throw std::runtime_error("Malformed line: " + line);
+            }
+
+            size_t num_items = std::stoul(num_items_str);
             
-            if (num_items) {
-                // Read the rest of the line (items)
-                if (!(iss >> items_str)) {
-                    throw std::runtime_error("Empty line: " + line);
-                }
-            }
-
             std::unordered_set<std::string> items = {};
-            std::stringstream ss(items_str);
-            std::string item;
-
-            while (std::getline(ss, item, ',')) {
-                if (!item.empty()) {
-                    items.insert(item);
+            if (num_items) {
+                std::string tag;
+    
+                while (std::getline(iss, tag, ',')) {
+                    if (!tag.empty()) {
+                        items.insert(tag);
+                    }
                 }
             }
-            
             m_data[filename] = std::move(items);
         }
     }
 
     inline static std::unordered_map<std::string, std::unordered_set<std::string>> m_data;
     inline static bool m_initialized = false;
-    std::unordered_set<std::string> m_qualifiers{};
-    std::unordered_set<std::string> m_disallowedQualifiers{};
+    std::unordered_set<std::string> m_tags{};
+    std::unordered_set<std::string> m_disallowedTags{};
 };

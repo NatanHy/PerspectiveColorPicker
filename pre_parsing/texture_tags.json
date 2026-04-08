@@ -1,0 +1,2985 @@
+{
+    "acacia_door_bottom.png": [],
+    "acacia_door_top.png": [],
+    "acacia_leaves.png": [
+        "unused"
+    ],
+    "acacia_log.png": [
+        "full block"
+    ],
+    "acacia_log_top.png": [
+        "full block"
+    ],
+    "acacia_planks.png": [
+        "full block"
+    ],
+    "acacia_sapling.png": [],
+    "acacia_trapdoor.png": [],
+    "activator_rail.png": [
+        "unused"
+    ],
+    "activator_rail_on.png": [
+        "unused"
+    ],
+    "allium.png": [
+        "cross"
+    ],
+    "amethyst_block.png": [
+        "full block"
+    ],
+    "amethyst_cluster.png": [
+        "cross"
+    ],
+    "ancient_debris_side.png": [
+        "full block",
+        "directional"
+    ],
+    "ancient_debris_top.png": [
+        "full block",
+        "top",
+        "directional"
+    ],
+    "andesite.png": [
+        "full block"
+    ],
+    "anvil.png": [
+        "unused"
+    ],
+    "anvil_top.png": [
+        "unused"
+    ],
+    "attached_melon_stem.png": [
+        "unused"
+    ],
+    "attached_pumpkin_stem.png": [
+        "unused"
+    ],
+    "azalea_leaves.png": [
+        "full block"
+    ],
+    "azalea_plant.png": [],
+    "azalea_side.png": [
+        "unused"
+    ],
+    "azalea_top.png": [
+        "top"
+    ],
+    "azure_bluet.png": [
+        "cross"
+    ],
+    "bamboo_block.png": [
+        "full block"
+    ],
+    "bamboo_block_top.png": [
+        "full block",
+        "top"
+    ],
+    "bamboo_door_bottom.png": [],
+    "bamboo_door_top.png": [],
+    "bamboo_fence.png": [
+        "unused"
+    ],
+    "bamboo_fence_gate.png": [
+        "unused"
+    ],
+    "bamboo_fence_gate_particle.png": [
+        "unused"
+    ],
+    "bamboo_fence_particle.png": [
+        "unused"
+    ],
+    "bamboo_large_leaves.png": [
+        "unused"
+    ],
+    "bamboo_mosaic.png": [
+        "full block"
+    ],
+    "bamboo_planks.png": [
+        "full block"
+    ],
+    "bamboo_singleleaf.png": [
+        "unused"
+    ],
+    "bamboo_small_leaves.png": [
+        "unused"
+    ],
+    "bamboo_stage0.png": [
+        "cross"
+    ],
+    "bamboo_stalk.png": [
+        "unused"
+    ],
+    "bamboo_trapdoor.png": [],
+    "barrel_bottom.png": [
+        "full block",
+        "bottom"
+    ],
+    "barrel_side.png": [
+        "full block",
+        "directional"
+    ],
+    "barrel_top.png": [
+        "full block",
+        "top"
+    ],
+    "barrel_top_open.png": [
+        "full block",
+        "directional"
+    ],
+    "basalt_side.png": [
+        "full block"
+    ],
+    "basalt_top.png": [
+        "full block",
+        "top"
+    ],
+    "beacon.png": [
+        "unused"
+    ],
+    "bedrock.png": [
+        "full block"
+    ],
+    "beehive_end.png": [
+        "full block",
+        "bottom"
+    ],
+    "beehive_front.png": [
+        "full block",
+        "directional"
+    ],
+    "beehive_front_honey.png": [
+        "full block",
+        "directional"
+    ],
+    "beehive_side.png": [
+        "full block",
+        "directional"
+    ],
+    "beetroots_stage0.png": [],
+    "beetroots_stage1.png": [],
+    "beetroots_stage2.png": [],
+    "beetroots_stage3.png": [],
+    "bee_nest_bottom.png": [
+        "full block",
+        "bottom"
+    ],
+    "bee_nest_front.png": [
+        "full block",
+        "directional"
+    ],
+    "bee_nest_front_honey.png": [
+        "full block",
+        "directional"
+    ],
+    "bee_nest_side.png": [
+        "full block",
+        "directional"
+    ],
+    "bee_nest_top.png": [
+        "full block",
+        "top"
+    ],
+    "bell_bottom.png": [
+        "unused"
+    ],
+    "bell_side.png": [
+        "unused"
+    ],
+    "bell_top.png": [
+        "unused"
+    ],
+    "big_dripleaf_side.png": [
+        "unused"
+    ],
+    "big_dripleaf_stem.png": [
+        "unused"
+    ],
+    "big_dripleaf_tip.png": [
+        "unused"
+    ],
+    "big_dripleaf_top.png": [
+        "unused"
+    ],
+    "birch_door_bottom.png": [],
+    "birch_door_top.png": [],
+    "birch_leaves.png": [
+        "unused"
+    ],
+    "birch_log.png": [
+        "full block"
+    ],
+    "birch_log_top.png": [
+        "full block"
+    ],
+    "birch_planks.png": [
+        "full block"
+    ],
+    "birch_sapling.png": [
+        "cross"
+    ],
+    "birch_trapdoor.png": [],
+    "blackstone.png": [
+        "full block"
+    ],
+    "blackstone_top.png": [
+        "full block"
+    ],
+    "black_candle.png": [],
+    "black_candle_lit.png": [],
+    "black_concrete.png": [
+        "full block"
+    ],
+    "black_concrete_powder.png": [
+        "full block"
+    ],
+    "black_glazed_terracotta.png": [
+        "full block"
+    ],
+    "black_shulker_box.png": [
+        "full block",
+        "entity"
+    ],
+    "black_stained_glass.png": [
+        "full block"
+    ],
+    "black_stained_glass_pane_top.png": [],
+    "black_terracotta.png": [
+        "full block"
+    ],
+    "black_wool.png": [
+        "full block"
+    ],
+    "blast_furnace_front.png": [
+        "full block"
+    ],
+    "blast_furnace_front_on.png": [
+        "full block",
+        "animated"
+    ],
+    "blast_furnace_side.png": [
+        "full block"
+    ],
+    "blast_furnace_top.png": [
+        "full block",
+        "top"
+    ],
+    "blue_candle.png": [],
+    "blue_candle_lit.png": [],
+    "blue_concrete.png": [
+        "full block"
+    ],
+    "blue_concrete_powder.png": [
+        "full block"
+    ],
+    "blue_glazed_terracotta.png": [
+        "full block"
+    ],
+    "blue_ice.png": [
+        "full block"
+    ],
+    "blue_orchid.png": [
+        "cross"
+    ],
+    "blue_shulker_box.png": [
+        "full block",
+        "entity"
+    ],
+    "blue_stained_glass.png": [
+        "full block"
+    ],
+    "blue_stained_glass_pane_top.png": [],
+    "blue_terracotta.png": [
+        "full block"
+    ],
+    "blue_wool.png": [
+        "full block"
+    ],
+    "bone_block_side.png": [
+        "full block"
+    ],
+    "bone_block_top.png": [
+        "full block"
+    ],
+    "bookshelf.png": [
+        "full block"
+    ],
+    "brain_coral.png": [
+        "cross"
+    ],
+    "brain_coral_block.png": [
+        "full block"
+    ],
+    "brain_coral_fan.png": [
+        "cross"
+    ],
+    "brewing_stand.png": [
+        "unused"
+    ],
+    "brewing_stand_base.png": [
+        "unused"
+    ],
+    "bricks.png": [
+        "full block"
+    ],
+    "brown_candle.png": [],
+    "brown_candle_lit.png": [],
+    "brown_concrete.png": [
+        "full block"
+    ],
+    "brown_concrete_powder.png": [
+        "full block"
+    ],
+    "brown_glazed_terracotta.png": [
+        "full block"
+    ],
+    "brown_mushroom.png": [
+        "cross"
+    ],
+    "brown_mushroom_block.png": [
+        "full block"
+    ],
+    "brown_shulker_box.png": [
+        "full block",
+        "entity"
+    ],
+    "brown_stained_glass.png": [
+        "full block"
+    ],
+    "brown_stained_glass_pane_top.png": [],
+    "brown_terracotta.png": [
+        "full block"
+    ],
+    "brown_wool.png": [
+        "full block"
+    ],
+    "bubble_coral.png": [
+        "cross"
+    ],
+    "bubble_coral_block.png": [
+        "full block"
+    ],
+    "bubble_coral_fan.png": [
+        "cross"
+    ],
+    "budding_amethyst.png": [
+        "full block"
+    ],
+    "bush.png": [
+        "unused"
+    ],
+    "cactus_bottom.png": [
+        "bottom"
+    ],
+    "cactus_flower.png": [
+        "cross"
+    ],
+    "cactus_side.png": [],
+    "cactus_top.png": [
+        "top"
+    ],
+    "cake_bottom.png": [
+        "bottom"
+    ],
+    "cake_inner.png": [],
+    "cake_side.png": [],
+    "cake_top.png": [
+        "top"
+    ],
+    "calcite.png": [
+        "full block"
+    ],
+    "calibrated_sculk_sensor_amethyst.png": [
+        "unused"
+    ],
+    "calibrated_sculk_sensor_input_side.png": [
+        "unused"
+    ],
+    "calibrated_sculk_sensor_top.png": [
+        "unused"
+    ],
+    "campfire_fire.png": [
+        "animated"
+    ],
+    "campfire_log.png": [
+        "unused"
+    ],
+    "campfire_log_lit.png": [
+        "animated",
+        "unused"
+    ],
+    "candle.png": [],
+    "candle_lit.png": [],
+    "carrots_stage0.png": [],
+    "carrots_stage1.png": [],
+    "carrots_stage2.png": [],
+    "carrots_stage3.png": [],
+    "cartography_table_side1.png": [
+        "full block",
+        "directional"
+    ],
+    "cartography_table_side2.png": [
+        "full block",
+        "directional"
+    ],
+    "cartography_table_side3.png": [
+        "full block",
+        "directional"
+    ],
+    "cartography_table_top.png": [
+        "full block",
+        "top"
+    ],
+    "carved_pumpkin.png": [
+        "full block"
+    ],
+    "cauldron_bottom.png": [
+        "unused"
+    ],
+    "cauldron_inner.png": [
+        "unused"
+    ],
+    "cauldron_side.png": [
+        "full block"
+    ],
+    "cauldron_top.png": [
+        "unused"
+    ],
+    "cave_vines.png": [
+        "cross"
+    ],
+    "cave_vines_lit.png": [
+        "cross"
+    ],
+    "cave_vines_plant.png": [
+        "cross"
+    ],
+    "cave_vines_plant_lit.png": [
+        "cross"
+    ],
+    "chain.png": [
+        "unused"
+    ],
+    "chain_command_block_back.png": [
+        "full block",
+        "animated"
+    ],
+    "chain_command_block_conditional.png": [
+        "full block",
+        "animated"
+    ],
+    "chain_command_block_front.png": [
+        "full block",
+        "animated"
+    ],
+    "chain_command_block_side.png": [
+        "full block",
+        "animated"
+    ],
+    "cherry_door_bottom.png": [],
+    "cherry_door_top.png": [],
+    "cherry_leaves.png": [
+        "full block"
+    ],
+    "cherry_log.png": [
+        "full block"
+    ],
+    "cherry_log_top.png": [
+        "full block"
+    ],
+    "cherry_planks.png": [
+        "full block"
+    ],
+    "cherry_sapling.png": [
+        "cross"
+    ],
+    "cherry_trapdoor.png": [],
+    "chipped_anvil_top.png": [
+        "unused"
+    ],
+    "chiseled_bookshelf_empty.png": [
+        "full block"
+    ],
+    "chiseled_bookshelf_occupied.png": [
+        "full block"
+    ],
+    "chiseled_bookshelf_side.png": [
+        "full block"
+    ],
+    "chiseled_bookshelf_top.png": [
+        "full block",
+        "top"
+    ],
+    "chiseled_copper.png": [],
+    "chiseled_deepslate.png": [
+        "full block"
+    ],
+    "chiseled_nether_bricks.png": [
+        "full block"
+    ],
+    "chiseled_polished_blackstone.png": [
+        "full block"
+    ],
+    "chiseled_quartz_block.png": [
+        "full block"
+    ],
+    "chiseled_quartz_block_top.png": [
+        "full block"
+    ],
+    "chiseled_red_sandstone.png": [
+        "full block"
+    ],
+    "chiseled_resin_bricks.png": [
+        "full block"
+    ],
+    "chiseled_sandstone.png": [
+        "full block"
+    ],
+    "chiseled_stone_bricks.png": [
+        "full block"
+    ],
+    "chiseled_tuff.png": [
+        "full block"
+    ],
+    "chiseled_tuff_bricks.png": [
+        "full block"
+    ],
+    "chiseled_tuff_bricks_top.png": [
+        "full block"
+    ],
+    "chiseled_tuff_top.png": [
+        "full block",
+        "top"
+    ],
+    "chorus_flower.png": [],
+    "chorus_flower_dead.png": [],
+    "chorus_plant.png": [],
+    "clay.png": [
+        "full block"
+    ],
+    "closed_eyeblossom.png": [
+        "cross"
+    ],
+    "coal_block.png": [
+        "full block"
+    ],
+    "coal_ore.png": [
+        "full block"
+    ],
+    "coarse_dirt.png": [
+        "full block"
+    ],
+    "cobbled_deepslate.png": [
+        "full block"
+    ],
+    "cobblestone.png": [
+        "full block"
+    ],
+    "cobweb.png": [
+        "TODO"
+    ],
+    "cocoa_stage0.png": [
+        "unused"
+    ],
+    "cocoa_stage1.png": [
+        "unused"
+    ],
+    "cocoa_stage2.png": [
+        "unused"
+    ],
+    "command_block_back.png": [
+        "full block",
+        "animated"
+    ],
+    "command_block_conditional.png": [
+        "full block",
+        "animated"
+    ],
+    "command_block_front.png": [
+        "full block",
+        "animated"
+    ],
+    "command_block_side.png": [
+        "full block",
+        "animated"
+    ],
+    "comparator.png": [
+        "unused"
+    ],
+    "comparator_on.png": [
+        "unused"
+    ],
+    "composter_bottom.png": [
+        "full block",
+        "bottom"
+    ],
+    "composter_compost.png": [
+        "unused"
+    ],
+    "composter_ready.png": [
+        "unused"
+    ],
+    "composter_side.png": [
+        "full block"
+    ],
+    "composter_top.png": [
+        "unused"
+    ],
+    "conduit.png": [
+        "unused"
+    ],
+    "copper_block.png": [
+        "full block"
+    ],
+    "copper_bulb.png": [
+        "full block"
+    ],
+    "copper_bulb_lit.png": [
+        "full block"
+    ],
+    "copper_bulb_lit_powered.png": [
+        "full block"
+    ],
+    "copper_bulb_powered.png": [
+        "full block"
+    ],
+    "copper_door_bottom.png": [],
+    "copper_door_top.png": [],
+    "copper_grate.png": [
+        "full block"
+    ],
+    "copper_ore.png": [
+        "full block"
+    ],
+    "copper_trapdoor.png": [],
+    "cornflower.png": [
+        "cross"
+    ],
+    "cracked_deepslate_bricks.png": [
+        "full block"
+    ],
+    "cracked_deepslate_tiles.png": [],
+    "cracked_nether_bricks.png": [
+        "full block"
+    ],
+    "cracked_polished_blackstone_bricks.png": [],
+    "cracked_stone_bricks.png": [
+        "full block"
+    ],
+    "crafter_bottom.png": [
+        "full block",
+        "bottom"
+    ],
+    "crafter_east.png": [
+        "full block"
+    ],
+    "crafter_east_crafting.png": [
+        "full block"
+    ],
+    "crafter_east_triggered.png": [
+        "full block"
+    ],
+    "crafter_north.png": [
+        "full block"
+    ],
+    "crafter_north_crafting.png": [
+        "full block"
+    ],
+    "crafter_south.png": [
+        "full block"
+    ],
+    "crafter_south_triggered.png": [
+        "full block"
+    ],
+    "crafter_top.png": [
+        "full block",
+        "top"
+    ],
+    "crafter_top_crafting.png": [
+        "full block",
+        "top"
+    ],
+    "crafter_top_triggered.png": [
+        "full block",
+        "top"
+    ],
+    "crafter_west.png": [
+        "full block"
+    ],
+    "crafter_west_crafting.png": [
+        "full block"
+    ],
+    "crafter_west_triggered.png": [
+        "full block"
+    ],
+    "crafting_table_front.png": [
+        "full block",
+        "directional"
+    ],
+    "crafting_table_side.png": [
+        "full block",
+        "directional"
+    ],
+    "crafting_table_top.png": [
+        "full block",
+        "top"
+    ],
+    "creaking_heart.png": [
+        "full block"
+    ],
+    "creaking_heart_awake.png": [
+        "full block"
+    ],
+    "creaking_heart_dormant.png": [
+        "full block"
+    ],
+    "creaking_heart_top.png": [
+        "full block",
+        "top"
+    ],
+    "creaking_heart_top_awake.png": [
+        "full block",
+        "top"
+    ],
+    "creaking_heart_top_dormant.png": [
+        "full block",
+        "top"
+    ],
+    "crimson_door_bottom.png": [],
+    "crimson_door_top.png": [],
+    "crimson_fungus.png": [
+        "cross"
+    ],
+    "crimson_nylium.png": [
+        "full block",
+        "top"
+    ],
+    "crimson_nylium_side.png": [
+        "full block"
+    ],
+    "crimson_planks.png": [
+        "full block"
+    ],
+    "crimson_roots.png": [
+        "cross"
+    ],
+    "crimson_roots_pot.png": [
+        "unused"
+    ],
+    "crimson_stem.png": [
+        "full block",
+        "animated"
+    ],
+    "crimson_stem_top.png": [
+        "full block"
+    ],
+    "crimson_trapdoor.png": [],
+    "crying_obsidian.png": [
+        "full block"
+    ],
+    "cut_copper.png": [
+        "full block"
+    ],
+    "cut_red_sandstone.png": [
+        "full block"
+    ],
+    "cut_sandstone.png": [
+        "full block"
+    ],
+    "cyan_candle.png": [],
+    "cyan_candle_lit.png": [],
+    "cyan_concrete.png": [
+        "full block"
+    ],
+    "cyan_concrete_powder.png": [
+        "full block"
+    ],
+    "cyan_glazed_terracotta.png": [
+        "full block"
+    ],
+    "cyan_shulker_box.png": [
+        "full block",
+        "entity"
+    ],
+    "cyan_stained_glass.png": [
+        "full block"
+    ],
+    "cyan_stained_glass_pane_top.png": [],
+    "cyan_terracotta.png": [
+        "full block"
+    ],
+    "cyan_wool.png": [
+        "full block"
+    ],
+    "damaged_anvil_top.png": [
+        "unused"
+    ],
+    "dandelion.png": [
+        "cross"
+    ],
+    "dark_oak_door_bottom.png": [],
+    "dark_oak_door_top.png": [],
+    "dark_oak_leaves.png": [
+        "unused"
+    ],
+    "dark_oak_log.png": [
+        "full block"
+    ],
+    "dark_oak_log_top.png": [
+        "full block"
+    ],
+    "dark_oak_planks.png": [
+        "full block"
+    ],
+    "dark_oak_sapling.png": [
+        "cross"
+    ],
+    "dark_oak_trapdoor.png": [],
+    "dark_prismarine.png": [
+        "full block"
+    ],
+    "daylight_detector_inverted_top.png": [
+        "unused"
+    ],
+    "daylight_detector_side.png": [
+        "unused"
+    ],
+    "daylight_detector_top.png": [
+        "unused"
+    ],
+    "dead_brain_coral.png": [
+        "cross"
+    ],
+    "dead_brain_coral_block.png": [
+        "full block"
+    ],
+    "dead_brain_coral_fan.png": [
+        "cross"
+    ],
+    "dead_bubble_coral.png": [
+        "cross"
+    ],
+    "dead_bubble_coral_block.png": [
+        "full block"
+    ],
+    "dead_bubble_coral_fan.png": [
+        "cross"
+    ],
+    "dead_bush.png": [
+        "cross"
+    ],
+    "dead_fire_coral.png": [
+        "cross"
+    ],
+    "dead_fire_coral_block.png": [
+        "top"
+    ],
+    "dead_fire_coral_fan.png": [
+        "cross"
+    ],
+    "dead_horn_coral.png": [
+        "cross"
+    ],
+    "dead_horn_coral_block.png": [
+        "full block"
+    ],
+    "dead_horn_coral_fan.png": [
+        "cross"
+    ],
+    "dead_tube_coral.png": [],
+    "dead_tube_coral_block.png": [
+        "full block"
+    ],
+    "dead_tube_coral_fan.png": [
+        "cross"
+    ],
+    "debug.png": [
+        "unused"
+    ],
+    "debug2.png": [
+        "unused"
+    ],
+    "deepslate.png": [
+        "full block"
+    ],
+    "deepslate_bricks.png": [
+        "full block"
+    ],
+    "deepslate_coal_ore.png": [
+        "full block"
+    ],
+    "deepslate_copper_ore.png": [
+        "full block"
+    ],
+    "deepslate_diamond_ore.png": [
+        "full block"
+    ],
+    "deepslate_emerald_ore.png": [
+        "full block"
+    ],
+    "deepslate_gold_ore.png": [
+        "full block"
+    ],
+    "deepslate_iron_ore.png": [
+        "full block"
+    ],
+    "deepslate_lapis_ore.png": [
+        "full block"
+    ],
+    "deepslate_redstone_ore.png": [
+        "full block"
+    ],
+    "deepslate_tiles.png": [
+        "full block"
+    ],
+    "deepslate_top.png": [
+        "full block",
+        "top"
+    ],
+    "destroy_stage_0.png": [
+        "unused"
+    ],
+    "destroy_stage_1.png": [
+        "unused"
+    ],
+    "destroy_stage_2.png": [
+        "unused"
+    ],
+    "destroy_stage_3.png": [
+        "unused"
+    ],
+    "destroy_stage_4.png": [
+        "unused"
+    ],
+    "destroy_stage_5.png": [
+        "unused"
+    ],
+    "destroy_stage_6.png": [
+        "unused"
+    ],
+    "destroy_stage_7.png": [
+        "unused"
+    ],
+    "destroy_stage_8.png": [
+        "unused"
+    ],
+    "destroy_stage_9.png": [
+        "unused"
+    ],
+    "detector_rail.png": [
+        "unused"
+    ],
+    "detector_rail_on.png": [
+        "unused"
+    ],
+    "diamond_block.png": [
+        "full block"
+    ],
+    "diamond_ore.png": [
+        "full block"
+    ],
+    "diorite.png": [
+        "full block"
+    ],
+    "dirt.png": [
+        "full block"
+    ],
+    "dirt_path_side.png": [],
+    "dirt_path_top.png": [
+        "top"
+    ],
+    "dispenser_front.png": [
+        "full block"
+    ],
+    "dispenser_front_vertical.png": [
+        "full block"
+    ],
+    "dragon_egg.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_0_bottom.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_0_east.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_0_north.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_0_south.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_0_tentacles.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_0_top.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_0_west.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_1_bottom.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_1_east.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_1_north.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_1_south.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_1_tentacles.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_1_top.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_1_west.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_2_bottom.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_2_east.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_2_north.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_2_south.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_2_tentacles.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_2_top.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_2_west.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_3_bottom.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_3_east.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_3_north.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_3_south.png": [],
+    "dried_ghast_hydration_3_tentacles.png": [],
+    "dried_ghast_hydration_3_top.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_3_west.png": [],
+    "dried_kelp_bottom.png": [
+        "full block",
+        "bottom",
+        "unused"
+    ],
+    "dried_kelp_side.png": [
+        "full block"
+    ],
+    "dried_kelp_top.png": [
+        "full block",
+        "top"
+    ],
+    "dripstone_block.png": [
+        "full block"
+    ],
+    "dropper_front.png": [],
+    "dropper_front_vertical.png": [],
+    "emerald_block.png": [
+        "full block"
+    ],
+    "emerald_ore.png": [
+        "full block"
+    ],
+    "enchanting_table_bottom.png": [
+        "full block"
+    ],
+    "enchanting_table_side.png": [
+        "TODO"
+    ],
+    "enchanting_table_top.png": [
+        "unused"
+    ],
+    "end_portal_frame_eye.png": [
+        "unused"
+    ],
+    "end_portal_frame_side.png": [],
+    "end_portal_frame_top.png": [
+        "top"
+    ],
+    "end_rod.png": [
+        "unused"
+    ],
+    "end_stone.png": [
+        "full block"
+    ],
+    "end_stone_bricks.png": [
+        "full block"
+    ],
+    "exposed_chiseled_copper.png": [
+        "full block"
+    ],
+    "exposed_copper.png": [
+        "full block"
+    ],
+    "exposed_copper_bulb.png": [
+        "full block"
+    ],
+    "exposed_copper_bulb_lit.png": [
+        "full block"
+    ],
+    "exposed_copper_bulb_lit_powered.png": [
+        "full block"
+    ],
+    "exposed_copper_bulb_powered.png": [
+        "full block"
+    ],
+    "exposed_copper_door_bottom.png": [],
+    "exposed_copper_door_top.png": [
+        "full block"
+    ],
+    "exposed_copper_grate.png": [
+        "full block"
+    ],
+    "exposed_copper_trapdoor.png": [],
+    "exposed_cut_copper.png": [],
+    "farmland.png": [
+        "top"
+    ],
+    "farmland_moist.png": [
+        "top"
+    ],
+    "fern.png": [
+        "unused"
+    ],
+    "firefly_bush.png": [],
+    "firefly_bush_emissive.png": [
+        "unused"
+    ],
+    "fire_0.png": [
+        "animated"
+    ],
+    "fire_1.png": [
+        "animated"
+    ],
+    "fire_coral.png": [
+        "cross"
+    ],
+    "fire_coral_block.png": [
+        "full block"
+    ],
+    "fire_coral_fan.png": [
+        "cross"
+    ],
+    "fletching_table_front.png": [
+        "full block",
+        "directional"
+    ],
+    "fletching_table_side.png": [
+        "full block",
+        "directional"
+    ],
+    "fletching_table_top.png": [
+        "full block",
+        "top"
+    ],
+    "flowering_azalea_leaves.png": [
+        "full block"
+    ],
+    "flowering_azalea_side.png": [
+        "unused"
+    ],
+    "flowering_azalea_top.png": [
+        "top"
+    ],
+    "flower_pot.png": [
+        "unused"
+    ],
+    "frogspawn.png": [
+        "unused"
+    ],
+    "frosted_ice_0.png": [
+        "full block"
+    ],
+    "frosted_ice_1.png": [
+        "full block"
+    ],
+    "frosted_ice_2.png": [
+        "full block"
+    ],
+    "frosted_ice_3.png": [
+        "full block"
+    ],
+    "furnace_front.png": [
+        "full block"
+    ],
+    "furnace_front_on.png": [
+        "full block"
+    ],
+    "furnace_side.png": [
+        "full block"
+    ],
+    "furnace_top.png": [
+        "full block",
+        "top"
+    ],
+    "gilded_blackstone.png": [
+        "full block"
+    ],
+    "glass.png": [
+        "full block"
+    ],
+    "glass_pane_top.png": [],
+    "glowstone.png": [
+        "full block"
+    ],
+    "glow_item_frame.png": [
+        "unused"
+    ],
+    "glow_lichen.png": [],
+    "gold_block.png": [
+        "full block"
+    ],
+    "gold_ore.png": [
+        "full block"
+    ],
+    "granite.png": [
+        "full block"
+    ],
+    "grass_block_side.png": [
+        "full block"
+    ],
+    "grass_block_side_overlay.png": [
+        "unused"
+    ],
+    "grass_block_snow.png": [
+        "full block"
+    ],
+    "grass_block_top.png": [
+        "top",
+        "unused"
+    ],
+    "gravel.png": [
+        "full block"
+    ],
+    "gray_candle.png": [],
+    "gray_candle_lit.png": [],
+    "gray_concrete.png": [
+        "full block"
+    ],
+    "gray_concrete_powder.png": [
+        "full block"
+    ],
+    "gray_glazed_terracotta.png": [
+        "full block"
+    ],
+    "gray_shulker_box.png": [
+        "full block",
+        "entity"
+    ],
+    "gray_stained_glass.png": [
+        "full block"
+    ],
+    "gray_stained_glass_pane_top.png": [],
+    "gray_terracotta.png": [
+        "full block"
+    ],
+    "gray_wool.png": [
+        "full block"
+    ],
+    "green_candle.png": [],
+    "green_candle_lit.png": [],
+    "green_concrete.png": [
+        "full block"
+    ],
+    "green_concrete_powder.png": [
+        "full block"
+    ],
+    "green_glazed_terracotta.png": [],
+    "green_shulker_box.png": [
+        "full block",
+        "entity"
+    ],
+    "green_stained_glass.png": [
+        "full block"
+    ],
+    "green_stained_glass_pane_top.png": [],
+    "green_terracotta.png": [
+        "full block"
+    ],
+    "green_wool.png": [
+        "full block"
+    ],
+    "grindstone_pivot.png": [
+        "unused"
+    ],
+    "grindstone_round.png": [
+        "unused"
+    ],
+    "grindstone_side.png": [
+        "unused"
+    ],
+    "hanging_roots.png": [
+        "cross"
+    ],
+    "hay_block_side.png": [
+        "full block"
+    ],
+    "hay_block_top.png": [
+        "full block",
+        "top"
+    ],
+    "heavy_core.png": [
+        "unused"
+    ],
+    "honeycomb_block.png": [
+        "full block"
+    ],
+    "honey_block_bottom.png": [
+        "full block",
+        "bottom"
+    ],
+    "honey_block_side.png": [
+        "full block"
+    ],
+    "honey_block_top.png": [
+        "full block",
+        "top"
+    ],
+    "hopper_inside.png": [
+        "unused"
+    ],
+    "hopper_outside.png": [
+        "unused"
+    ],
+    "hopper_top.png": [
+        "unused"
+    ],
+    "horn_coral.png": [
+        "cross"
+    ],
+    "horn_coral_block.png": [
+        "full block"
+    ],
+    "horn_coral_fan.png": [
+        "cross"
+    ],
+    "ice.png": [
+        "full block"
+    ],
+    "iron_bars.png": [],
+    "iron_block.png": [
+        "full block"
+    ],
+    "iron_door_bottom.png": [],
+    "iron_door_top.png": [],
+    "iron_ore.png": [
+        "full block"
+    ],
+    "iron_trapdoor.png": [],
+    "item_frame.png": [
+        "unused"
+    ],
+    "jack_o_lantern.png": [
+        "full block"
+    ],
+    "jigsaw_bottom.png": [
+        "full block",
+        "bottom"
+    ],
+    "jigsaw_lock.png": [
+        "full block"
+    ],
+    "jigsaw_side.png": [
+        "full block"
+    ],
+    "jigsaw_top.png": [
+        "full block"
+    ],
+    "jukebox_side.png": [
+        "full block"
+    ],
+    "jukebox_top.png": [
+        "full block",
+        "top"
+    ],
+    "jungle_door_bottom.png": [],
+    "jungle_door_top.png": [],
+    "jungle_leaves.png": [
+        "unused"
+    ],
+    "jungle_log.png": [
+        "full block"
+    ],
+    "jungle_log_top.png": [
+        "full block"
+    ],
+    "jungle_planks.png": [
+        "full block"
+    ],
+    "jungle_sapling.png": [
+        "cross"
+    ],
+    "jungle_trapdoor.png": [],
+    "kelp.png": [
+        "animated"
+    ],
+    "kelp_plant.png": [
+        "animated"
+    ],
+    "ladder.png": [],
+    "lantern.png": [
+        "unused"
+    ],
+    "lapis_block.png": [
+        "full block"
+    ],
+    "lapis_ore.png": [
+        "full block"
+    ],
+    "large_amethyst_bud.png": [
+        "cross"
+    ],
+    "large_fern_bottom.png": [
+        "unused"
+    ],
+    "large_fern_top.png": [
+        "unused"
+    ],
+    "lava_flow.png": [
+        "animated"
+    ],
+    "lava_still.png": [
+        "animated"
+    ],
+    "leaf_litter.png": [
+        "unused"
+    ],
+    "lectern_base.png": [
+        "unused"
+    ],
+    "lectern_front.png": [
+        "unused"
+    ],
+    "lectern_sides.png": [
+        "unused"
+    ],
+    "lectern_top.png": [
+        "unused"
+    ],
+    "lever.png": [
+        "unused"
+    ],
+    "lightning_rod.png": [
+        "unused"
+    ],
+    "lightning_rod_on.png": [
+        "unused"
+    ],
+    "light_blue_candle.png": [],
+    "light_blue_candle_lit.png": [],
+    "light_blue_concrete.png": [
+        "full block"
+    ],
+    "light_blue_concrete_powder.png": [
+        "full block"
+    ],
+    "light_blue_glazed_terracotta.png": [
+        "full block"
+    ],
+    "light_blue_shulker_box.png": [
+        "full block",
+        "entity"
+    ],
+    "light_blue_stained_glass.png": [
+        "full block"
+    ],
+    "light_blue_stained_glass_pane_top.png": [],
+    "light_blue_terracotta.png": [
+        "full block"
+    ],
+    "light_blue_wool.png": [
+        "full block"
+    ],
+    "light_gray_candle.png": [],
+    "light_gray_candle_lit.png": [],
+    "light_gray_concrete.png": [
+        "full block"
+    ],
+    "light_gray_concrete_powder.png": [
+        "full block"
+    ],
+    "light_gray_glazed_terracotta.png": [
+        "full block"
+    ],
+    "light_gray_shulker_box.png": [
+        "full block",
+        "entity"
+    ],
+    "light_gray_stained_glass.png": [
+        "full block"
+    ],
+    "light_gray_stained_glass_pane_top.png": [],
+    "light_gray_terracotta.png": [
+        "full block"
+    ],
+    "light_gray_wool.png": [
+        "full block"
+    ],
+    "lilac_bottom.png": [
+        "cross"
+    ],
+    "lilac_top.png": [
+        "cross"
+    ],
+    "lily_of_the_valley.png": [
+        "cross"
+    ],
+    "lily_pad.png": [
+        "unused"
+    ],
+    "lime_candle.png": [],
+    "lime_candle_lit.png": [],
+    "lime_concrete.png": [
+        "full block"
+    ],
+    "lime_concrete_powder.png": [
+        "full block"
+    ],
+    "lime_glazed_terracotta.png": [
+        "full block"
+    ],
+    "lime_shulker_box.png": [
+        "full block",
+        "entity"
+    ],
+    "lime_stained_glass.png": [
+        "full block"
+    ],
+    "lime_stained_glass_pane_top.png": [],
+    "lime_terracotta.png": [
+        "full block"
+    ],
+    "lime_wool.png": [
+        "full block"
+    ],
+    "lodestone_side.png": [
+        "full block"
+    ],
+    "lodestone_top.png": [
+        "full block",
+        "top"
+    ],
+    "loom_bottom.png": [
+        "full block",
+        "bottom"
+    ],
+    "loom_front.png": [
+        "full block"
+    ],
+    "loom_side.png": [
+        "full block"
+    ],
+    "loom_top.png": [
+        "full block",
+        "top"
+    ],
+    "magenta_candle.png": [],
+    "magenta_candle_lit.png": [],
+    "magenta_concrete.png": [
+        "full block"
+    ],
+    "magenta_concrete_powder.png": [
+        "full block"
+    ],
+    "magenta_glazed_terracotta.png": [
+        "full block"
+    ],
+    "magenta_shulker_box.png": [
+        "full block",
+        "entity"
+    ],
+    "magenta_stained_glass.png": [
+        "full block"
+    ],
+    "magenta_stained_glass_pane_top.png": [],
+    "magenta_terracotta.png": [
+        "full block"
+    ],
+    "magenta_wool.png": [],
+    "magma.png": [
+        "full block",
+        "animated"
+    ],
+    "mangrove_door_bottom.png": [],
+    "mangrove_door_top.png": [],
+    "mangrove_leaves.png": [
+        "unused"
+    ],
+    "mangrove_log.png": [
+        "full block"
+    ],
+    "mangrove_log_top.png": [
+        "full block"
+    ],
+    "mangrove_planks.png": [
+        "full block"
+    ],
+    "mangrove_propagule.png": [
+        "cross"
+    ],
+    "mangrove_propagule_hanging.png": [
+        "unused"
+    ],
+    "mangrove_roots_side.png": [
+        "full block"
+    ],
+    "mangrove_roots_top.png": [
+        "full block",
+        "top"
+    ],
+    "mangrove_trapdoor.png": [],
+    "medium_amethyst_bud.png": [
+        "cross"
+    ],
+    "melon_side.png": [],
+    "melon_stem.png": [
+        "full block",
+        "unused"
+    ],
+    "melon_top.png": [
+        "full block"
+    ],
+    "mossy_cobblestone.png": [
+        "full block"
+    ],
+    "mossy_stone_bricks.png": [],
+    "moss_block.png": [
+        "full block"
+    ],
+    "mud.png": [],
+    "muddy_mangrove_roots_side.png": [
+        "full block"
+    ],
+    "muddy_mangrove_roots_top.png": [
+        "full block",
+        "top"
+    ],
+    "mud_bricks.png": [
+        "full block"
+    ],
+    "mushroom_block_inside.png": [
+        "full block"
+    ],
+    "mushroom_stem.png": [
+        "full block"
+    ],
+    "mycelium_side.png": [
+        "full block"
+    ],
+    "mycelium_top.png": [
+        "full block",
+        "top"
+    ],
+    "netherite_block.png": [
+        "full block"
+    ],
+    "netherrack.png": [
+        "full block"
+    ],
+    "nether_bricks.png": [
+        "full block"
+    ],
+    "nether_gold_ore.png": [],
+    "nether_portal.png": [
+        "animated"
+    ],
+    "nether_quartz_ore.png": [
+        "full block"
+    ],
+    "nether_sprouts.png": [
+        "cross"
+    ],
+    "nether_wart_block.png": [
+        "full block"
+    ],
+    "nether_wart_stage0.png": [],
+    "nether_wart_stage1.png": [],
+    "nether_wart_stage2.png": [],
+    "note_block.png": [
+        "full block"
+    ],
+    "oak_door_bottom.png": [],
+    "oak_door_top.png": [],
+    "oak_leaves.png": [
+        "unused"
+    ],
+    "oak_log.png": [
+        "full block"
+    ],
+    "oak_log_top.png": [
+        "full block"
+    ],
+    "oak_planks.png": [
+        "full block"
+    ],
+    "oak_sapling.png": [
+        "cross"
+    ],
+    "oak_trapdoor.png": [],
+    "observer_back.png": [
+        "full block"
+    ],
+    "observer_back_on.png": [
+        "full block"
+    ],
+    "observer_front.png": [
+        "full block"
+    ],
+    "observer_side.png": [],
+    "observer_top.png": [
+        "full block",
+        "top"
+    ],
+    "obsidian.png": [
+        "full block"
+    ],
+    "ochre_froglight_side.png": [
+        "full block"
+    ],
+    "ochre_froglight_top.png": [
+        "full block",
+        "top"
+    ],
+    "open_eyeblossom.png": [
+        "cross"
+    ],
+    "open_eyeblossom_emissive.png": [
+        "unused"
+    ],
+    "orange_candle.png": [],
+    "orange_candle_lit.png": [],
+    "orange_concrete.png": [
+        "full block"
+    ],
+    "orange_concrete_powder.png": [
+        "full block"
+    ],
+    "orange_glazed_terracotta.png": [],
+    "orange_shulker_box.png": [
+        "entity"
+    ],
+    "orange_stained_glass.png": [
+        "full block"
+    ],
+    "orange_stained_glass_pane_top.png": [],
+    "orange_terracotta.png": [
+        "full block"
+    ],
+    "orange_tulip.png": [
+        "cross"
+    ],
+    "orange_wool.png": [
+        "full block"
+    ],
+    "oxeye_daisy.png": [
+        "cross"
+    ],
+    "oxidized_chiseled_copper.png": [
+        "full block"
+    ],
+    "oxidized_copper.png": [
+        "full block"
+    ],
+    "oxidized_copper_bulb.png": [
+        "full block"
+    ],
+    "oxidized_copper_bulb_lit.png": [
+        "full block"
+    ],
+    "oxidized_copper_bulb_lit_powered.png": [
+        "full block"
+    ],
+    "oxidized_copper_bulb_powered.png": [
+        "full block"
+    ],
+    "oxidized_copper_door_bottom.png": [],
+    "oxidized_copper_door_top.png": [],
+    "oxidized_copper_grate.png": [
+        "full block"
+    ],
+    "oxidized_copper_trapdoor.png": [],
+    "oxidized_cut_copper.png": [
+        "full block"
+    ],
+    "packed_ice.png": [
+        "full block"
+    ],
+    "packed_mud.png": [
+        "full block"
+    ],
+    "pale_hanging_moss.png": [],
+    "pale_hanging_moss_tip.png": [],
+    "pale_moss_block.png": [
+        "full block"
+    ],
+    "pale_moss_carpet.png": [
+        "unused"
+    ],
+    "pale_moss_carpet_side_small.png": [],
+    "pale_moss_carpet_side_tall.png": [],
+    "pale_oak_door_bottom.png": [],
+    "pale_oak_door_top.png": [],
+    "pale_oak_leaves.png": [
+        "full block"
+    ],
+    "pale_oak_log.png": [
+        "full block"
+    ],
+    "pale_oak_log_top.png": [
+        "full block"
+    ],
+    "pale_oak_planks.png": [
+        "full block"
+    ],
+    "pale_oak_sapling.png": [
+        "cross"
+    ],
+    "pale_oak_trapdoor.png": [
+        "full block"
+    ],
+    "pearlescent_froglight_side.png": [
+        "full block"
+    ],
+    "pearlescent_froglight_top.png": [
+        "full block"
+    ],
+    "peony_bottom.png": [
+        "unused"
+    ],
+    "peony_top.png": [],
+    "pink_candle.png": [],
+    "pink_candle_lit.png": [],
+    "pink_concrete.png": [
+        "full block"
+    ],
+    "pink_concrete_powder.png": [],
+    "pink_glazed_terracotta.png": [
+        "full block"
+    ],
+    "pink_petals.png": [
+        "top"
+    ],
+    "pink_petals_stem.png": [
+        "unused"
+    ],
+    "pink_shulker_box.png": [
+        "full block",
+        "entity"
+    ],
+    "pink_stained_glass.png": [
+        "full block"
+    ],
+    "pink_stained_glass_pane_top.png": [],
+    "pink_terracotta.png": [
+        "full block"
+    ],
+    "pink_tulip.png": [
+        "cross"
+    ],
+    "pink_wool.png": [
+        "full block"
+    ],
+    "piston_bottom.png": [],
+    "piston_inner.png": [],
+    "piston_side.png": [
+        "full block"
+    ],
+    "piston_top.png": [
+        "full block"
+    ],
+    "piston_top_sticky.png": [
+        "full block"
+    ],
+    "pitcher_crop_bottom.png": [
+        "unused"
+    ],
+    "pitcher_crop_bottom_stage_1.png": [],
+    "pitcher_crop_bottom_stage_2.png": [],
+    "pitcher_crop_bottom_stage_3.png": [
+        "unused"
+    ],
+    "pitcher_crop_bottom_stage_4.png": [
+        "unused"
+    ],
+    "pitcher_crop_side.png": [],
+    "pitcher_crop_top.png": [
+        "top"
+    ],
+    "pitcher_crop_top_stage_3.png": [],
+    "pitcher_crop_top_stage_4.png": [],
+    "podzol_side.png": [
+        "full block"
+    ],
+    "podzol_top.png": [
+        "full block",
+        "top"
+    ],
+    "pointed_dripstone_down_base.png": [],
+    "pointed_dripstone_down_frustum.png": [],
+    "pointed_dripstone_down_middle.png": [],
+    "pointed_dripstone_down_tip.png": [],
+    "pointed_dripstone_down_tip_merge.png": [],
+    "pointed_dripstone_up_base.png": [],
+    "pointed_dripstone_up_frustum.png": [],
+    "pointed_dripstone_up_middle.png": [],
+    "pointed_dripstone_up_tip.png": [],
+    "pointed_dripstone_up_tip_merge.png": [],
+    "polished_andesite.png": [
+        "full block"
+    ],
+    "polished_basalt_side.png": [
+        "full block"
+    ],
+    "polished_basalt_top.png": [
+        "full block",
+        "top"
+    ],
+    "polished_blackstone.png": [
+        "full block"
+    ],
+    "polished_blackstone_bricks.png": [
+        "full block"
+    ],
+    "polished_deepslate.png": [
+        "full block"
+    ],
+    "polished_diorite.png": [
+        "full block"
+    ],
+    "polished_granite.png": [
+        "full block"
+    ],
+    "polished_tuff.png": [
+        "full block"
+    ],
+    "poppy.png": [
+        "cross"
+    ],
+    "potatoes_stage0.png": [],
+    "potatoes_stage1.png": [],
+    "potatoes_stage2.png": [],
+    "potatoes_stage3.png": [],
+    "potted_azalea_bush_plant.png": [
+        "unused"
+    ],
+    "potted_azalea_bush_side.png": [
+        "unused"
+    ],
+    "potted_azalea_bush_top.png": [
+        "unused"
+    ],
+    "potted_flowering_azalea_bush_plant.png": [
+        "unused"
+    ],
+    "potted_flowering_azalea_bush_side.png": [
+        "unused"
+    ],
+    "potted_flowering_azalea_bush_top.png": [
+        "unused"
+    ],
+    "powder_snow.png": [
+        "full block"
+    ],
+    "powered_rail.png": [
+        "unused"
+    ],
+    "powered_rail_on.png": [
+        "unused"
+    ],
+    "prismarine.png": [
+        "full block",
+        "animated"
+    ],
+    "prismarine_bricks.png": [
+        "full block"
+    ],
+    "pumpkin_side.png": [
+        "full block"
+    ],
+    "pumpkin_stem.png": [
+        "unused"
+    ],
+    "pumpkin_top.png": [
+        "full block",
+        "top"
+    ],
+    "purple_candle.png": [],
+    "purple_candle_lit.png": [],
+    "purple_concrete.png": [
+        "full block"
+    ],
+    "purple_concrete_powder.png": [
+        "full block"
+    ],
+    "purple_glazed_terracotta.png": [
+        "full block"
+    ],
+    "purple_shulker_box.png": [
+        "full block",
+        "entity"
+    ],
+    "purple_stained_glass.png": [
+        "full block"
+    ],
+    "purple_stained_glass_pane_top.png": [],
+    "purple_terracotta.png": [
+        "full block"
+    ],
+    "purple_wool.png": [],
+    "purpur_block.png": [
+        "full block"
+    ],
+    "purpur_pillar.png": [],
+    "purpur_pillar_top.png": [
+        "full block",
+        "top"
+    ],
+    "quartz_block_bottom.png": [
+        "full block"
+    ],
+    "quartz_block_side.png": [
+        "full block"
+    ],
+    "quartz_block_top.png": [
+        "full block",
+        "top"
+    ],
+    "quartz_bricks.png": [
+        "full block"
+    ],
+    "quartz_pillar.png": [
+        "full block"
+    ],
+    "quartz_pillar_top.png": [
+        "full block",
+        "top"
+    ],
+    "rail.png": [
+        "unused"
+    ],
+    "rail_corner.png": [
+        "unused"
+    ],
+    "raw_copper_block.png": [
+        "full block"
+    ],
+    "raw_gold_block.png": [
+        "full block"
+    ],
+    "raw_iron_block.png": [
+        "full block"
+    ],
+    "redstone_block.png": [
+        "full block"
+    ],
+    "redstone_dust_dot.png": [
+        "unused"
+    ],
+    "redstone_dust_line0.png": [
+        "unused"
+    ],
+    "redstone_dust_line1.png": [
+        "unused"
+    ],
+    "redstone_dust_overlay.png": [
+        "unused"
+    ],
+    "redstone_lamp.png": [
+        "full block"
+    ],
+    "redstone_lamp_on.png": [
+        "full block"
+    ],
+    "redstone_ore.png": [
+        "full block"
+    ],
+    "redstone_torch.png": [],
+    "redstone_torch_off.png": [],
+    "red_candle.png": [],
+    "red_candle_lit.png": [],
+    "red_concrete.png": [
+        "full block"
+    ],
+    "red_concrete_powder.png": [
+        "full block"
+    ],
+    "red_glazed_terracotta.png": [
+        "full block"
+    ],
+    "red_mushroom.png": [
+        "cross"
+    ],
+    "red_mushroom_block.png": [
+        "full block"
+    ],
+    "red_nether_bricks.png": [
+        "full block"
+    ],
+    "red_sand.png": [
+        "full block"
+    ],
+    "red_sandstone.png": [
+        "full block"
+    ],
+    "red_sandstone_bottom.png": [
+        "full block",
+        "bottom"
+    ],
+    "red_sandstone_top.png": [
+        "full block",
+        "top"
+    ],
+    "red_shulker_box.png": [
+        "full block",
+        "animated"
+    ],
+    "red_stained_glass.png": [
+        "full block"
+    ],
+    "red_stained_glass_pane_top.png": [],
+    "red_terracotta.png": [
+        "full block"
+    ],
+    "red_tulip.png": [
+        "cross"
+    ],
+    "red_wool.png": [
+        "full block"
+    ],
+    "reinforced_deepslate_bottom.png": [
+        "full block",
+        "bottom"
+    ],
+    "reinforced_deepslate_side.png": [
+        "full block"
+    ],
+    "reinforced_deepslate_top.png": [
+        "full block",
+        "top"
+    ],
+    "repeater.png": [
+        "unused"
+    ],
+    "repeater_on.png": [
+        "unused"
+    ],
+    "repeating_command_block_back.png": [
+        "full block",
+        "animated"
+    ],
+    "repeating_command_block_conditional.png": [
+        "full block",
+        "animated"
+    ],
+    "repeating_command_block_front.png": [
+        "full block",
+        "animated"
+    ],
+    "repeating_command_block_side.png": [
+        "full block",
+        "animated"
+    ],
+    "resin_block.png": [
+        "full block"
+    ],
+    "resin_bricks.png": [
+        "full block"
+    ],
+    "resin_clump.png": [],
+    "respawn_anchor_bottom.png": [
+        "full block"
+    ],
+    "respawn_anchor_side0.png": [
+        "full block"
+    ],
+    "respawn_anchor_side1.png": [
+        "full block"
+    ],
+    "respawn_anchor_side2.png": [],
+    "respawn_anchor_side3.png": [],
+    "respawn_anchor_side4.png": [
+        "full block"
+    ],
+    "respawn_anchor_top.png": [
+        "full block",
+        "top",
+        "animated"
+    ],
+    "respawn_anchor_top_off.png": [
+        "full block",
+        "top"
+    ],
+    "rooted_dirt.png": [
+        "full block"
+    ],
+    "rose_bush_bottom.png": [
+        "unused"
+    ],
+    "rose_bush_top.png": [],
+    "sand.png": [
+        "full block"
+    ],
+    "sandstone.png": [
+        "full block"
+    ],
+    "sandstone_bottom.png": [
+        "full block",
+        "bottom"
+    ],
+    "sandstone_top.png": [
+        "full block"
+    ],
+    "scaffolding_bottom.png": [
+        "unused"
+    ],
+    "scaffolding_side.png": [
+        "unused"
+    ],
+    "scaffolding_top.png": [
+        "top"
+    ],
+    "sculk.png": [
+        "full block",
+        "animated"
+    ],
+    "sculk_catalyst_bottom.png": [
+        "full block",
+        "bottom"
+    ],
+    "sculk_catalyst_side.png": [
+        "full block"
+    ],
+    "sculk_catalyst_side_bloom.png": [
+        "full block",
+        "animated"
+    ],
+    "sculk_catalyst_top.png": [
+        "full block",
+        "top"
+    ],
+    "sculk_catalyst_top_bloom.png": [
+        "full block",
+        "top",
+        "animated"
+    ],
+    "sculk_sensor_bottom.png": [
+        "bottom"
+    ],
+    "sculk_sensor_side.png": [
+        "unused"
+    ],
+    "sculk_sensor_tendril_active.png": [
+        "animated",
+        "unused"
+    ],
+    "sculk_sensor_tendril_inactive.png": [
+        "animated",
+        "unused"
+    ],
+    "sculk_sensor_top.png": [
+        "unused"
+    ],
+    "sculk_shrieker_bottom.png": [
+        "unused"
+    ],
+    "sculk_shrieker_can_summon_inner_top.png": [
+        "animated",
+        "unused"
+    ],
+    "sculk_shrieker_inner_top.png": [
+        "animated",
+        "unused"
+    ],
+    "sculk_shrieker_side.png": [],
+    "sculk_shrieker_top.png": [
+        "unused"
+    ],
+    "sculk_vein.png": [
+        "animated"
+    ],
+    "seagrass.png": [
+        "animated"
+    ],
+    "sea_lantern.png": [
+        "full block",
+        "animated"
+    ],
+    "sea_pickle.png": [
+        "unused"
+    ],
+    "short_dry_grass.png": [
+        "cross"
+    ],
+    "short_grass.png": [
+        "cross",
+        "unused"
+    ],
+    "shroomlight.png": [
+        "full block"
+    ],
+    "shulker_box.png": [
+        "full block",
+        "entity"
+    ],
+    "slime_block.png": [
+        "full block"
+    ],
+    "small_amethyst_bud.png": [
+        "cross"
+    ],
+    "small_dripleaf_side.png": [
+        "unused"
+    ],
+    "small_dripleaf_stem_bottom.png": [
+        "cross"
+    ],
+    "small_dripleaf_stem_top.png": [
+        "cross",
+        "unused"
+    ],
+    "small_dripleaf_top.png": [
+        "unused"
+    ],
+    "smithing_table_bottom.png": [
+        "full block",
+        "bottom"
+    ],
+    "smithing_table_front.png": [
+        "full block",
+        "directional"
+    ],
+    "smithing_table_side.png": [
+        "full block",
+        "directional"
+    ],
+    "smithing_table_top.png": [
+        "full block",
+        "top"
+    ],
+    "smoker_bottom.png": [
+        "full block",
+        "bottom"
+    ],
+    "smoker_front.png": [
+        "full block"
+    ],
+    "smoker_front_on.png": [
+        "full block",
+        "animated"
+    ],
+    "smoker_side.png": [
+        "full block"
+    ],
+    "smoker_top.png": [
+        "full block",
+        "top"
+    ],
+    "smooth_basalt.png": [
+        "full block"
+    ],
+    "smooth_stone.png": [
+        "full block"
+    ],
+    "smooth_stone_slab_side.png": [
+        "full block"
+    ],
+    "sniffer_egg_not_cracked_bottom.png": [
+        "unused"
+    ],
+    "sniffer_egg_not_cracked_east.png": [
+        "directional"
+    ],
+    "sniffer_egg_not_cracked_north.png": [
+        "directional"
+    ],
+    "sniffer_egg_not_cracked_south.png": [
+        "directional"
+    ],
+    "sniffer_egg_not_cracked_top.png": [
+        "top"
+    ],
+    "sniffer_egg_not_cracked_west.png": [
+        "directional"
+    ],
+    "sniffer_egg_slightly_cracked_bottom.png": [
+        "bottom"
+    ],
+    "sniffer_egg_slightly_cracked_east.png": [
+        "directional"
+    ],
+    "sniffer_egg_slightly_cracked_north.png": [
+        "directional"
+    ],
+    "sniffer_egg_slightly_cracked_south.png": [
+        "directional"
+    ],
+    "sniffer_egg_slightly_cracked_top.png": [
+        "top"
+    ],
+    "sniffer_egg_slightly_cracked_west.png": [
+        "directional"
+    ],
+    "sniffer_egg_very_cracked_bottom.png": [
+        "bottom"
+    ],
+    "sniffer_egg_very_cracked_east.png": [
+        "directional"
+    ],
+    "sniffer_egg_very_cracked_north.png": [
+        "directional"
+    ],
+    "sniffer_egg_very_cracked_south.png": [
+        "directional"
+    ],
+    "sniffer_egg_very_cracked_top.png": [
+        "top"
+    ],
+    "sniffer_egg_very_cracked_west.png": [
+        "directional"
+    ],
+    "snow.png": [
+        "unused"
+    ],
+    "soul_campfire_fire.png": [
+        "animated"
+    ],
+    "soul_campfire_log_lit.png": [
+        "animated",
+        "unused"
+    ],
+    "soul_fire_0.png": [
+        "animated"
+    ],
+    "soul_fire_1.png": [
+        "animated"
+    ],
+    "soul_lantern.png": [
+        "unused"
+    ],
+    "soul_sand.png": [
+        "full block"
+    ],
+    "soul_soil.png": [
+        "full block"
+    ],
+    "soul_torch.png": [],
+    "spawner.png": [
+        "full block"
+    ],
+    "sponge.png": [
+        "full block"
+    ],
+    "spore_blossom.png": [
+        "unused"
+    ],
+    "spore_blossom_base.png": [
+        "unused"
+    ],
+    "spruce_door_bottom.png": [],
+    "spruce_door_top.png": [],
+    "spruce_leaves.png": [
+        "unused"
+    ],
+    "spruce_log.png": [
+        "full block"
+    ],
+    "spruce_log_top.png": [
+        "full block"
+    ],
+    "spruce_planks.png": [
+        "full block"
+    ],
+    "spruce_sapling.png": [
+        "cross"
+    ],
+    "spruce_trapdoor.png": [],
+    "stone.png": [
+        "full block"
+    ],
+    "stonecutter_bottom.png": [
+        "bottom",
+        "unused"
+    ],
+    "stonecutter_saw.png": [
+        "animated",
+        "unused"
+    ],
+    "stonecutter_side.png": [
+        "unused"
+    ],
+    "stonecutter_top.png": [
+        "unused"
+    ],
+    "stone_bricks.png": [
+        "full block"
+    ],
+    "stripped_acacia_log.png": [
+        "full block"
+    ],
+    "stripped_acacia_log_top.png": [
+        "full block"
+    ],
+    "stripped_bamboo_block.png": [
+        "full block"
+    ],
+    "stripped_bamboo_block_top.png": [
+        "full block"
+    ],
+    "stripped_birch_log.png": [
+        "full block"
+    ],
+    "stripped_birch_log_top.png": [
+        "full block"
+    ],
+    "stripped_cherry_log.png": [],
+    "stripped_cherry_log_top.png": [],
+    "stripped_crimson_stem.png": [
+        "full block"
+    ],
+    "stripped_crimson_stem_top.png": [
+        "full block"
+    ],
+    "stripped_dark_oak_log.png": [
+        "full block"
+    ],
+    "stripped_dark_oak_log_top.png": [],
+    "stripped_jungle_log.png": [],
+    "stripped_jungle_log_top.png": [],
+    "stripped_mangrove_log.png": [],
+    "stripped_mangrove_log_top.png": [],
+    "stripped_oak_log.png": [
+        "full block"
+    ],
+    "stripped_oak_log_top.png": [],
+    "stripped_pale_oak_log.png": [
+        "full block"
+    ],
+    "stripped_pale_oak_log_top.png": [
+        "full block"
+    ],
+    "stripped_spruce_log.png": [
+        "full block"
+    ],
+    "stripped_spruce_log_top.png": [
+        "full block"
+    ],
+    "stripped_warped_stem.png": [
+        "full block"
+    ],
+    "stripped_warped_stem_top.png": [
+        "full block"
+    ],
+    "structure_block.png": [
+        "full block"
+    ],
+    "structure_block_corner.png": [
+        "full block"
+    ],
+    "structure_block_data.png": [
+        "full block"
+    ],
+    "structure_block_load.png": [
+        "full block"
+    ],
+    "structure_block_save.png": [
+        "full block"
+    ],
+    "sugar_cane.png": [
+        "cross"
+    ],
+    "sunflower_back.png": [
+        "unused"
+    ],
+    "sunflower_bottom.png": [],
+    "sunflower_front.png": [
+        "unused"
+    ],
+    "sunflower_top.png": [
+        "cross",
+        "unused"
+    ],
+    "suspicious_gravel_0.png": [
+        "full block"
+    ],
+    "suspicious_gravel_1.png": [
+        "full block"
+    ],
+    "suspicious_gravel_2.png": [
+        "full block"
+    ],
+    "suspicious_gravel_3.png": [
+        "full block"
+    ],
+    "suspicious_sand_0.png": [
+        "full block"
+    ],
+    "suspicious_sand_1.png": [
+        "full block"
+    ],
+    "suspicious_sand_2.png": [],
+    "suspicious_sand_3.png": [],
+    "sweet_berry_bush_stage0.png": [
+        "cross"
+    ],
+    "sweet_berry_bush_stage1.png": [
+        "cross"
+    ],
+    "sweet_berry_bush_stage2.png": [
+        "cross"
+    ],
+    "sweet_berry_bush_stage3.png": [
+        "cross"
+    ],
+    "tall_dry_grass.png": [
+        "cross"
+    ],
+    "tall_grass_bottom.png": [
+        "unused"
+    ],
+    "tall_grass_top.png": [
+        "unused"
+    ],
+    "tall_seagrass_bottom.png": [
+        "animated"
+    ],
+    "tall_seagrass_top.png": [
+        "animated"
+    ],
+    "target_side.png": [
+        "full block"
+    ],
+    "target_top.png": [
+        "full block",
+        "top"
+    ],
+    "terracotta.png": [
+        "full block"
+    ],
+    "test_block_accept.png": [
+        "full block"
+    ],
+    "test_block_fail.png": [
+        "full block"
+    ],
+    "test_block_log.png": [
+        "full block"
+    ],
+    "test_block_start.png": [],
+    "test_instance_block.png": [],
+    "tinted_glass.png": [
+        "full block"
+    ],
+    "tnt_bottom.png": [
+        "full block",
+        "bottom"
+    ],
+    "tnt_side.png": [
+        "full block"
+    ],
+    "tnt_top.png": [
+        "full block",
+        "top"
+    ],
+    "torch.png": [],
+    "torchflower.png": [
+        "cross"
+    ],
+    "torchflower_crop_stage0.png": [
+        "cross"
+    ],
+    "torchflower_crop_stage1.png": [
+        "cross"
+    ],
+    "trial_spawner_bottom.png": [
+        "full block",
+        "bottom"
+    ],
+    "trial_spawner_side_active.png": [
+        "full block"
+    ],
+    "trial_spawner_side_active_ominous.png": [
+        "full block"
+    ],
+    "trial_spawner_side_inactive.png": [
+        "full block"
+    ],
+    "trial_spawner_side_inactive_ominous.png": [
+        "full block"
+    ],
+    "trial_spawner_top_active.png": [
+        "full block",
+        "top"
+    ],
+    "trial_spawner_top_active_ominous.png": [
+        "full block",
+        "top"
+    ],
+    "trial_spawner_top_ejecting_reward.png": [
+        "full block",
+        "top"
+    ],
+    "trial_spawner_top_ejecting_reward_ominous.png": [
+        "full block",
+        "top"
+    ],
+    "trial_spawner_top_inactive.png": [
+        "full block",
+        "top"
+    ],
+    "trial_spawner_top_inactive_ominous.png": [
+        "full block",
+        "top"
+    ],
+    "tripwire.png": [
+        "unused"
+    ],
+    "tripwire_hook.png": [
+        "unused"
+    ],
+    "tube_coral.png": [
+        "cross"
+    ],
+    "tube_coral_block.png": [
+        "full block"
+    ],
+    "tube_coral_fan.png": [
+        "cross"
+    ],
+    "tuff.png": [
+        "full block"
+    ],
+    "tuff_bricks.png": [
+        "full block"
+    ],
+    "twisting_vines.png": [
+        "cross"
+    ],
+    "twisting_vines_plant.png": [
+        "cross"
+    ],
+    "vault_bottom.png": [
+        "full block",
+        "bottom"
+    ],
+    "vault_bottom_ominous.png": [
+        "full block",
+        "bottom"
+    ],
+    "vault_front_ejecting.png": [
+        "full block"
+    ],
+    "vault_front_ejecting_ominous.png": [
+        "full block"
+    ],
+    "vault_front_off.png": [
+        "full block"
+    ],
+    "vault_front_off_ominous.png": [
+        "full block"
+    ],
+    "vault_front_on.png": [
+        "full block"
+    ],
+    "vault_front_on_ominous.png": [
+        "full block"
+    ],
+    "vault_side_off.png": [
+        "full block"
+    ],
+    "vault_side_off_ominous.png": [
+        "full block"
+    ],
+    "vault_side_on.png": [
+        "full block"
+    ],
+    "vault_side_on_ominous.png": [
+        "full block"
+    ],
+    "vault_top.png": [
+        "full block",
+        "top"
+    ],
+    "vault_top_ejecting.png": [
+        "full block",
+        "top"
+    ],
+    "vault_top_ejecting_ominous.png": [
+        "full block",
+        "top"
+    ],
+    "vault_top_ominous.png": [
+        "full block",
+        "top"
+    ],
+    "verdant_froglight_side.png": [
+        "full block"
+    ],
+    "verdant_froglight_top.png": [
+        "full block"
+    ],
+    "vine.png": [
+        "unused"
+    ],
+    "warped_door_bottom.png": [],
+    "warped_door_top.png": [],
+    "warped_fungus.png": [
+        "cross"
+    ],
+    "warped_nylium.png": [
+        "full block",
+        "top"
+    ],
+    "warped_nylium_side.png": [
+        "full block"
+    ],
+    "warped_planks.png": [
+        "full block"
+    ],
+    "warped_roots.png": [
+        "cross"
+    ],
+    "warped_roots_pot.png": [
+        "unused"
+    ],
+    "warped_stem.png": [
+        "full block",
+        "animated"
+    ],
+    "warped_stem_top.png": [],
+    "warped_trapdoor.png": [
+        "full block"
+    ],
+    "warped_wart_block.png": [
+        "full block"
+    ],
+    "water_flow.png": [
+        "unused"
+    ],
+    "water_overlay.png": [
+        "unused"
+    ],
+    "water_still.png": [
+        "unused"
+    ],
+    "weathered_chiseled_copper.png": [],
+    "weathered_copper.png": [
+        "full block"
+    ],
+    "weathered_copper_bulb.png": [
+        "full block"
+    ],
+    "weathered_copper_bulb_lit.png": [
+        "full block"
+    ],
+    "weathered_copper_bulb_lit_powered.png": [
+        "full block"
+    ],
+    "weathered_copper_bulb_powered.png": [
+        "full block"
+    ],
+    "weathered_copper_door_bottom.png": [],
+    "weathered_copper_door_top.png": [],
+    "weathered_copper_grate.png": [
+        "full block"
+    ],
+    "weathered_copper_trapdoor.png": [],
+    "weathered_cut_copper.png": [
+        "full block"
+    ],
+    "weeping_vines.png": [
+        "cross"
+    ],
+    "weeping_vines_plant.png": [
+        "cross"
+    ],
+    "wet_sponge.png": [
+        "full block"
+    ],
+    "wheat_stage0.png": [],
+    "wheat_stage1.png": [],
+    "wheat_stage2.png": [],
+    "wheat_stage3.png": [],
+    "wheat_stage4.png": [],
+    "wheat_stage5.png": [],
+    "wheat_stage6.png": [],
+    "wheat_stage7.png": [],
+    "white_candle.png": [],
+    "white_candle_lit.png": [],
+    "white_concrete.png": [
+        "full block"
+    ],
+    "white_concrete_powder.png": [
+        "full block"
+    ],
+    "white_glazed_terracotta.png": [
+        "full block"
+    ],
+    "white_shulker_box.png": [
+        "full block",
+        "entity"
+    ],
+    "white_stained_glass.png": [
+        "full block"
+    ],
+    "white_stained_glass_pane_top.png": [],
+    "white_terracotta.png": [
+        "full block"
+    ],
+    "white_tulip.png": [
+        "cross"
+    ],
+    "white_wool.png": [
+        "full block"
+    ],
+    "wildflowers.png": [
+        "top"
+    ],
+    "wildflowers_stem.png": [
+        "unused"
+    ],
+    "wither_rose.png": [
+        "cross"
+    ],
+    "yellow_candle.png": [],
+    "yellow_candle_lit.png": [],
+    "yellow_concrete.png": [
+        "full block"
+    ],
+    "yellow_concrete_powder.png": [
+        "full block"
+    ],
+    "yellow_glazed_terracotta.png": [
+        "full block"
+    ],
+    "yellow_shulker_box.png": [
+        "full block",
+        "entity"
+    ],
+    "yellow_stained_glass.png": [
+        "full block"
+    ],
+    "yellow_stained_glass_pane_top.png": [],
+    "yellow_terracotta.png": [
+        "full block"
+    ],
+    "yellow_wool.png": [
+        "full block"
+    ]
+}

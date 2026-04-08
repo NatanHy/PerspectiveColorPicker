@@ -1,0 +1,1080 @@
+acacia_door_bottom.png,0
+acacia_door_top.png,0
+acacia_leaves.png,1,unused
+acacia_log.png,1,full block
+acacia_log_top.png,1,full block
+acacia_planks.png,1,full block
+acacia_sapling.png,0
+acacia_trapdoor.png,0
+activator_rail.png,1,unused
+activator_rail_on.png,1,unused
+allium.png,1,cross
+amethyst_block.png,1,full block
+amethyst_cluster.png,1,cross
+ancient_debris_side.png,2,full block,directional
+ancient_debris_top.png,3,full block,top,directional
+andesite.png,1,full block
+anvil.png,1,unused
+anvil_top.png,1,unused
+attached_melon_stem.png,1,unused
+attached_pumpkin_stem.png,1,unused
+azalea_leaves.png,1,full block
+azalea_plant.png,0
+azalea_side.png,1,unused
+azalea_top.png,1,top
+azure_bluet.png,1,cross
+bamboo_block.png,1,full block
+bamboo_block_top.png,2,full block,top
+bamboo_door_bottom.png,0
+bamboo_door_top.png,0
+bamboo_fence.png,1,unused
+bamboo_fence_gate.png,1,unused
+bamboo_fence_gate_particle.png,1,unused
+bamboo_fence_particle.png,1,unused
+bamboo_large_leaves.png,1,unused
+bamboo_mosaic.png,1,full block
+bamboo_planks.png,1,full block
+bamboo_singleleaf.png,1,unused
+bamboo_small_leaves.png,1,unused
+bamboo_stage0.png,1,cross
+bamboo_stalk.png,1,unused
+bamboo_trapdoor.png,0
+barrel_bottom.png,2,full block,bottom
+barrel_side.png,2,full block,directional
+barrel_top.png,2,full block,top
+barrel_top_open.png,2,full block,directional
+basalt_side.png,1,full block
+basalt_top.png,2,full block,top
+beacon.png,1,unused
+bedrock.png,1,full block
+beehive_end.png,2,full block,bottom
+beehive_front.png,2,full block,directional
+beehive_front_honey.png,2,full block,directional
+beehive_side.png,2,full block,directional
+beetroots_stage0.png,0
+beetroots_stage1.png,0
+beetroots_stage2.png,0
+beetroots_stage3.png,0
+bee_nest_bottom.png,2,full block,bottom
+bee_nest_front.png,2,full block,directional
+bee_nest_front_honey.png,2,full block,directional
+bee_nest_side.png,2,full block,directional
+bee_nest_top.png,2,full block,top
+bell_bottom.png,1,unused
+bell_side.png,1,unused
+bell_top.png,1,unused
+big_dripleaf_side.png,1,unused
+big_dripleaf_stem.png,1,unused
+big_dripleaf_tip.png,1,unused
+big_dripleaf_top.png,1,unused
+birch_door_bottom.png,0
+birch_door_top.png,0
+birch_leaves.png,1,unused
+birch_log.png,1,full block
+birch_log_top.png,1,full block
+birch_planks.png,1,full block
+birch_sapling.png,1,cross
+birch_trapdoor.png,0
+blackstone.png,1,full block
+blackstone_top.png,1,full block
+black_candle.png,0
+black_candle_lit.png,0
+black_concrete.png,1,full block
+black_concrete_powder.png,1,full block
+black_glazed_terracotta.png,1,full block
+black_shulker_box.png,2,full block,entity
+black_stained_glass.png,1,full block
+black_stained_glass_pane_top.png,0
+black_terracotta.png,1,full block
+black_wool.png,1,full block
+blast_furnace_front.png,1,full block
+blast_furnace_front_on.png,2,full block,animated
+blast_furnace_side.png,1,full block
+blast_furnace_top.png,2,full block,top
+blue_candle.png,0
+blue_candle_lit.png,0
+blue_concrete.png,1,full block
+blue_concrete_powder.png,1,full block
+blue_glazed_terracotta.png,1,full block
+blue_ice.png,1,full block
+blue_orchid.png,1,cross
+blue_shulker_box.png,2,full block,entity
+blue_stained_glass.png,1,full block
+blue_stained_glass_pane_top.png,0
+blue_terracotta.png,1,full block
+blue_wool.png,1,full block
+bone_block_side.png,1,full block
+bone_block_top.png,1,full block
+bookshelf.png,1,full block
+brain_coral.png,1,cross
+brain_coral_block.png,1,full block
+brain_coral_fan.png,1,cross
+brewing_stand.png,1,unused
+brewing_stand_base.png,1,unused
+bricks.png,1,full block
+brown_candle.png,0
+brown_candle_lit.png,0
+brown_concrete.png,1,full block
+brown_concrete_powder.png,1,full block
+brown_glazed_terracotta.png,1,full block
+brown_mushroom.png,1,cross
+brown_mushroom_block.png,1,full block
+brown_shulker_box.png,2,full block,entity
+brown_stained_glass.png,1,full block
+brown_stained_glass_pane_top.png,0
+brown_terracotta.png,1,full block
+brown_wool.png,1,full block
+bubble_coral.png,1,cross
+bubble_coral_block.png,1,full block
+bubble_coral_fan.png,1,cross
+budding_amethyst.png,1,full block
+bush.png,1,unused
+cactus_bottom.png,1,bottom
+cactus_flower.png,1,cross
+cactus_side.png,0
+cactus_top.png,1,top
+cake_bottom.png,1,bottom
+cake_inner.png,0
+cake_side.png,0
+cake_top.png,1,top
+calcite.png,1,full block
+calibrated_sculk_sensor_amethyst.png,1,unused
+calibrated_sculk_sensor_input_side.png,1,unused
+calibrated_sculk_sensor_top.png,1,unused
+campfire_fire.png,1,animated
+campfire_log.png,1,unused
+campfire_log_lit.png,2,animated,unused
+candle.png,0
+candle_lit.png,0
+carrots_stage0.png,0
+carrots_stage1.png,0
+carrots_stage2.png,0
+carrots_stage3.png,0
+cartography_table_side1.png,2,full block,directional
+cartography_table_side2.png,2,full block,directional
+cartography_table_side3.png,2,full block,directional
+cartography_table_top.png,2,full block,top
+carved_pumpkin.png,1,full block
+cauldron_bottom.png,1,unused
+cauldron_inner.png,1,unused
+cauldron_side.png,1,full block
+cauldron_top.png,1,unused
+cave_vines.png,1,cross
+cave_vines_lit.png,1,cross
+cave_vines_plant.png,1,cross
+cave_vines_plant_lit.png,1,cross
+chain.png,1,unused
+chain_command_block_back.png,2,full block,animated
+chain_command_block_conditional.png,2,full block,animated
+chain_command_block_front.png,2,full block,animated
+chain_command_block_side.png,2,full block,animated
+cherry_door_bottom.png,0
+cherry_door_top.png,0
+cherry_leaves.png,1,full block
+cherry_log.png,1,full block
+cherry_log_top.png,1,full block
+cherry_planks.png,1,full block
+cherry_sapling.png,1,cross
+cherry_trapdoor.png,0
+chipped_anvil_top.png,1,unused
+chiseled_bookshelf_empty.png,1,full block
+chiseled_bookshelf_occupied.png,1,full block
+chiseled_bookshelf_side.png,1,full block
+chiseled_bookshelf_top.png,2,full block,top
+chiseled_copper.png,0
+chiseled_deepslate.png,1,full block
+chiseled_nether_bricks.png,1,full block
+chiseled_polished_blackstone.png,1,full block
+chiseled_quartz_block.png,1,full block
+chiseled_quartz_block_top.png,1,full block
+chiseled_red_sandstone.png,1,full block
+chiseled_resin_bricks.png,1,full block
+chiseled_sandstone.png,1,full block
+chiseled_stone_bricks.png,1,full block
+chiseled_tuff.png,1,full block
+chiseled_tuff_bricks.png,1,full block
+chiseled_tuff_bricks_top.png,1,full block
+chiseled_tuff_top.png,2,full block,top
+chorus_flower.png,0
+chorus_flower_dead.png,0
+chorus_plant.png,0
+clay.png,1,full block
+closed_eyeblossom.png,1,cross
+coal_block.png,1,full block
+coal_ore.png,1,full block
+coarse_dirt.png,1,full block
+cobbled_deepslate.png,1,full block
+cobblestone.png,1,full block
+cobweb.png,1,TODO
+cocoa_stage0.png,1,unused
+cocoa_stage1.png,1,unused
+cocoa_stage2.png,1,unused
+command_block_back.png,2,full block,animated
+command_block_conditional.png,2,full block,animated
+command_block_front.png,2,full block,animated
+command_block_side.png,2,full block,animated
+comparator.png,1,unused
+comparator_on.png,1,unused
+composter_bottom.png,2,full block,bottom
+composter_compost.png,1,unused
+composter_ready.png,1,unused
+composter_side.png,1,full block
+composter_top.png,1,unused
+conduit.png,1,unused
+copper_block.png,1,full block
+copper_bulb.png,1,full block
+copper_bulb_lit.png,1,full block
+copper_bulb_lit_powered.png,1,full block
+copper_bulb_powered.png,1,full block
+copper_door_bottom.png,0
+copper_door_top.png,0
+copper_grate.png,1,full block
+copper_ore.png,1,full block
+copper_trapdoor.png,0
+cornflower.png,1,cross
+cracked_deepslate_bricks.png,1,full block
+cracked_deepslate_tiles.png,0
+cracked_nether_bricks.png,1,full block
+cracked_polished_blackstone_bricks.png,0
+cracked_stone_bricks.png,1,full block
+crafter_bottom.png,2,full block,bottom
+crafter_east.png,1,full block
+crafter_east_crafting.png,1,full block
+crafter_east_triggered.png,1,full block
+crafter_north.png,1,full block
+crafter_north_crafting.png,1,full block
+crafter_south.png,1,full block
+crafter_south_triggered.png,1,full block
+crafter_top.png,2,full block,top
+crafter_top_crafting.png,2,full block,top
+crafter_top_triggered.png,2,full block,top
+crafter_west.png,1,full block
+crafter_west_crafting.png,1,full block
+crafter_west_triggered.png,1,full block
+crafting_table_front.png,2,full block,directional
+crafting_table_side.png,2,full block,directional
+crafting_table_top.png,2,full block,top
+creaking_heart.png,1,full block
+creaking_heart_awake.png,1,full block
+creaking_heart_dormant.png,1,full block
+creaking_heart_top.png,2,full block,top
+creaking_heart_top_awake.png,2,full block,top
+creaking_heart_top_dormant.png,2,full block,top
+crimson_door_bottom.png,0
+crimson_door_top.png,0
+crimson_fungus.png,1,cross
+crimson_nylium.png,2,full block,top
+crimson_nylium_side.png,1,full block
+crimson_planks.png,1,full block
+crimson_roots.png,1,cross
+crimson_roots_pot.png,1,unused
+crimson_stem.png,2,full block,animated
+crimson_stem_top.png,1,full block
+crimson_trapdoor.png,0
+crying_obsidian.png,1,full block
+cut_copper.png,1,full block
+cut_red_sandstone.png,1,full block
+cut_sandstone.png,1,full block
+cyan_candle.png,0
+cyan_candle_lit.png,0
+cyan_concrete.png,1,full block
+cyan_concrete_powder.png,1,full block
+cyan_glazed_terracotta.png,1,full block
+cyan_shulker_box.png,2,full block,entity
+cyan_stained_glass.png,1,full block
+cyan_stained_glass_pane_top.png,0
+cyan_terracotta.png,1,full block
+cyan_wool.png,1,full block
+damaged_anvil_top.png,1,unused
+dandelion.png,1,cross
+dark_oak_door_bottom.png,0
+dark_oak_door_top.png,0
+dark_oak_leaves.png,1,unused
+dark_oak_log.png,1,full block
+dark_oak_log_top.png,1,full block
+dark_oak_planks.png,1,full block
+dark_oak_sapling.png,1,cross
+dark_oak_trapdoor.png,0
+dark_prismarine.png,1,full block
+daylight_detector_inverted_top.png,1,unused
+daylight_detector_side.png,1,unused
+daylight_detector_top.png,1,unused
+dead_brain_coral.png,1,cross
+dead_brain_coral_block.png,1,full block
+dead_brain_coral_fan.png,1,cross
+dead_bubble_coral.png,1,cross
+dead_bubble_coral_block.png,1,full block
+dead_bubble_coral_fan.png,1,cross
+dead_bush.png,1,cross
+dead_fire_coral.png,1,cross
+dead_fire_coral_block.png,1,top
+dead_fire_coral_fan.png,1,cross
+dead_horn_coral.png,1,cross
+dead_horn_coral_block.png,1,full block
+dead_horn_coral_fan.png,1,cross
+dead_tube_coral.png,0
+dead_tube_coral_block.png,1,full block
+dead_tube_coral_fan.png,1,cross
+debug.png,1,unused
+debug2.png,1,unused
+deepslate.png,1,full block
+deepslate_bricks.png,1,full block
+deepslate_coal_ore.png,1,full block
+deepslate_copper_ore.png,1,full block
+deepslate_diamond_ore.png,1,full block
+deepslate_emerald_ore.png,1,full block
+deepslate_gold_ore.png,1,full block
+deepslate_iron_ore.png,1,full block
+deepslate_lapis_ore.png,1,full block
+deepslate_redstone_ore.png,1,full block
+deepslate_tiles.png,1,full block
+deepslate_top.png,2,full block,top
+destroy_stage_0.png,1,unused
+destroy_stage_1.png,1,unused
+destroy_stage_2.png,1,unused
+destroy_stage_3.png,1,unused
+destroy_stage_4.png,1,unused
+destroy_stage_5.png,1,unused
+destroy_stage_6.png,1,unused
+destroy_stage_7.png,1,unused
+destroy_stage_8.png,1,unused
+destroy_stage_9.png,1,unused
+detector_rail.png,1,unused
+detector_rail_on.png,1,unused
+diamond_block.png,1,full block
+diamond_ore.png,1,full block
+diorite.png,1,full block
+dirt.png,1,full block
+dirt_path_side.png,0
+dirt_path_top.png,1,top
+dispenser_front.png,1,full block
+dispenser_front_vertical.png,1,full block
+dragon_egg.png,1,unused
+dried_ghast_hydration_0_bottom.png,1,unused
+dried_ghast_hydration_0_east.png,1,unused
+dried_ghast_hydration_0_north.png,1,unused
+dried_ghast_hydration_0_south.png,1,unused
+dried_ghast_hydration_0_tentacles.png,1,unused
+dried_ghast_hydration_0_top.png,1,unused
+dried_ghast_hydration_0_west.png,1,unused
+dried_ghast_hydration_1_bottom.png,1,unused
+dried_ghast_hydration_1_east.png,1,unused
+dried_ghast_hydration_1_north.png,1,unused
+dried_ghast_hydration_1_south.png,1,unused
+dried_ghast_hydration_1_tentacles.png,1,unused
+dried_ghast_hydration_1_top.png,1,unused
+dried_ghast_hydration_1_west.png,1,unused
+dried_ghast_hydration_2_bottom.png,1,unused
+dried_ghast_hydration_2_east.png,1,unused
+dried_ghast_hydration_2_north.png,1,unused
+dried_ghast_hydration_2_south.png,1,unused
+dried_ghast_hydration_2_tentacles.png,1,unused
+dried_ghast_hydration_2_top.png,1,unused
+dried_ghast_hydration_2_west.png,1,unused
+dried_ghast_hydration_3_bottom.png,1,unused
+dried_ghast_hydration_3_east.png,1,unused
+dried_ghast_hydration_3_north.png,1,unused
+dried_ghast_hydration_3_south.png,0
+dried_ghast_hydration_3_tentacles.png,0
+dried_ghast_hydration_3_top.png,1,unused
+dried_ghast_hydration_3_west.png,0
+dried_kelp_bottom.png,3,full block,bottom,unused
+dried_kelp_side.png,1,full block
+dried_kelp_top.png,2,full block,top
+dripstone_block.png,1,full block
+dropper_front.png,0
+dropper_front_vertical.png,0
+emerald_block.png,1,full block
+emerald_ore.png,1,full block
+enchanting_table_bottom.png,1,full block
+enchanting_table_side.png,1,TODO
+enchanting_table_top.png,1,unused
+end_portal_frame_eye.png,1,unused
+end_portal_frame_side.png,0
+end_portal_frame_top.png,1,top
+end_rod.png,1,unused
+end_stone.png,1,full block
+end_stone_bricks.png,1,full block
+exposed_chiseled_copper.png,1,full block
+exposed_copper.png,1,full block
+exposed_copper_bulb.png,1,full block
+exposed_copper_bulb_lit.png,1,full block
+exposed_copper_bulb_lit_powered.png,1,full block
+exposed_copper_bulb_powered.png,1,full block
+exposed_copper_door_bottom.png,0
+exposed_copper_door_top.png,1,full block
+exposed_copper_grate.png,1,full block
+exposed_copper_trapdoor.png,0
+exposed_cut_copper.png,0
+farmland.png,1,top
+farmland_moist.png,1,top
+fern.png,1,unused
+firefly_bush.png,0
+firefly_bush_emissive.png,1,unused
+fire_0.png,1,animated
+fire_1.png,1,animated
+fire_coral.png,1,cross
+fire_coral_block.png,1,full block
+fire_coral_fan.png,1,cross
+fletching_table_front.png,2,full block,directional
+fletching_table_side.png,2,full block,directional
+fletching_table_top.png,2,full block,top
+flowering_azalea_leaves.png,1,full block
+flowering_azalea_side.png,1,unused
+flowering_azalea_top.png,1,top
+flower_pot.png,1,unused
+frogspawn.png,1,unused
+frosted_ice_0.png,1,full block
+frosted_ice_1.png,1,full block
+frosted_ice_2.png,1,full block
+frosted_ice_3.png,1,full block
+furnace_front.png,1,full block
+furnace_front_on.png,1,full block
+furnace_side.png,1,full block
+furnace_top.png,2,full block,top
+gilded_blackstone.png,1,full block
+glass.png,1,full block
+glass_pane_top.png,0
+glowstone.png,1,full block
+glow_item_frame.png,1,unused
+glow_lichen.png,0
+gold_block.png,1,full block
+gold_ore.png,1,full block
+granite.png,1,full block
+grass_block_side.png,1,full block
+grass_block_side_overlay.png,1,unused
+grass_block_snow.png,1,full block
+grass_block_top.png,2,top,unused
+gravel.png,1,full block
+gray_candle.png,0
+gray_candle_lit.png,0
+gray_concrete.png,1,full block
+gray_concrete_powder.png,1,full block
+gray_glazed_terracotta.png,1,full block
+gray_shulker_box.png,2,full block,entity
+gray_stained_glass.png,1,full block
+gray_stained_glass_pane_top.png,0
+gray_terracotta.png,1,full block
+gray_wool.png,1,full block
+green_candle.png,0
+green_candle_lit.png,0
+green_concrete.png,1,full block
+green_concrete_powder.png,1,full block
+green_glazed_terracotta.png,0
+green_shulker_box.png,2,full block,entity
+green_stained_glass.png,1,full block
+green_stained_glass_pane_top.png,0
+green_terracotta.png,1,full block
+green_wool.png,1,full block
+grindstone_pivot.png,1,unused
+grindstone_round.png,1,unused
+grindstone_side.png,1,unused
+hanging_roots.png,1,cross
+hay_block_side.png,1,full block
+hay_block_top.png,2,full block,top
+heavy_core.png,1,unused
+honeycomb_block.png,1,full block
+honey_block_bottom.png,2,full block,bottom
+honey_block_side.png,1,full block
+honey_block_top.png,2,full block,top
+hopper_inside.png,1,unused
+hopper_outside.png,1,unused
+hopper_top.png,1,unused
+horn_coral.png,1,cross
+horn_coral_block.png,1,full block
+horn_coral_fan.png,1,cross
+ice.png,1,full block
+iron_bars.png,0
+iron_block.png,1,full block
+iron_door_bottom.png,0
+iron_door_top.png,0
+iron_ore.png,1,full block
+iron_trapdoor.png,0
+item_frame.png,1,unused
+jack_o_lantern.png,1,full block
+jigsaw_bottom.png,2,full block,bottom
+jigsaw_lock.png,1,full block
+jigsaw_side.png,1,full block
+jigsaw_top.png,1,full block
+jukebox_side.png,1,full block
+jukebox_top.png,2,full block,top
+jungle_door_bottom.png,0
+jungle_door_top.png,0
+jungle_leaves.png,1,unused
+jungle_log.png,1,full block
+jungle_log_top.png,1,full block
+jungle_planks.png,1,full block
+jungle_sapling.png,1,cross
+jungle_trapdoor.png,0
+kelp.png,1,animated
+kelp_plant.png,1,animated
+ladder.png,0
+lantern.png,1,unused
+lapis_block.png,1,full block
+lapis_ore.png,1,full block
+large_amethyst_bud.png,1,cross
+large_fern_bottom.png,1,unused
+large_fern_top.png,1,unused
+lava_flow.png,1,animated
+lava_still.png,1,animated
+leaf_litter.png,1,unused
+lectern_base.png,1,unused
+lectern_front.png,1,unused
+lectern_sides.png,1,unused
+lectern_top.png,1,unused
+lever.png,1,unused
+lightning_rod.png,1,unused
+lightning_rod_on.png,1,unused
+light_blue_candle.png,0
+light_blue_candle_lit.png,0
+light_blue_concrete.png,1,full block
+light_blue_concrete_powder.png,1,full block
+light_blue_glazed_terracotta.png,1,full block
+light_blue_shulker_box.png,2,full block,entity
+light_blue_stained_glass.png,1,full block
+light_blue_stained_glass_pane_top.png,0
+light_blue_terracotta.png,1,full block
+light_blue_wool.png,1,full block
+light_gray_candle.png,0
+light_gray_candle_lit.png,0
+light_gray_concrete.png,1,full block
+light_gray_concrete_powder.png,1,full block
+light_gray_glazed_terracotta.png,1,full block
+light_gray_shulker_box.png,2,full block,entity
+light_gray_stained_glass.png,1,full block
+light_gray_stained_glass_pane_top.png,0
+light_gray_terracotta.png,1,full block
+light_gray_wool.png,1,full block
+lilac_bottom.png,1,cross
+lilac_top.png,1,cross
+lily_of_the_valley.png,1,cross
+lily_pad.png,1,unused
+lime_candle.png,0
+lime_candle_lit.png,0
+lime_concrete.png,1,full block
+lime_concrete_powder.png,1,full block
+lime_glazed_terracotta.png,1,full block
+lime_shulker_box.png,2,full block,entity
+lime_stained_glass.png,1,full block
+lime_stained_glass_pane_top.png,0
+lime_terracotta.png,1,full block
+lime_wool.png,1,full block
+lodestone_side.png,1,full block
+lodestone_top.png,2,full block,top
+loom_bottom.png,2,full block,bottom
+loom_front.png,1,full block
+loom_side.png,1,full block
+loom_top.png,2,full block,top
+magenta_candle.png,0
+magenta_candle_lit.png,0
+magenta_concrete.png,1,full block
+magenta_concrete_powder.png,1,full block
+magenta_glazed_terracotta.png,1,full block
+magenta_shulker_box.png,2,full block,entity
+magenta_stained_glass.png,1,full block
+magenta_stained_glass_pane_top.png,0
+magenta_terracotta.png,1,full block
+magenta_wool.png,0
+magma.png,2,full block,animated
+mangrove_door_bottom.png,0
+mangrove_door_top.png,0
+mangrove_leaves.png,1,unused
+mangrove_log.png,1,full block
+mangrove_log_top.png,1,full block
+mangrove_planks.png,1,full block
+mangrove_propagule.png,1,cross
+mangrove_propagule_hanging.png,1,unused
+mangrove_roots_side.png,1,full block
+mangrove_roots_top.png,2,full block,top
+mangrove_trapdoor.png,0
+medium_amethyst_bud.png,1,cross
+melon_side.png,0
+melon_stem.png,2,full block,unused
+melon_top.png,1,full block
+mossy_cobblestone.png,1,full block
+mossy_stone_bricks.png,0
+moss_block.png,1,full block
+mud.png,0
+muddy_mangrove_roots_side.png,1,full block
+muddy_mangrove_roots_top.png,2,full block,top
+mud_bricks.png,1,full block
+mushroom_block_inside.png,1,full block
+mushroom_stem.png,1,full block
+mycelium_side.png,1,full block
+mycelium_top.png,2,full block,top
+netherite_block.png,1,full block
+netherrack.png,1,full block
+nether_bricks.png,1,full block
+nether_gold_ore.png,0
+nether_portal.png,1,animated
+nether_quartz_ore.png,1,full block
+nether_sprouts.png,1,cross
+nether_wart_block.png,1,full block
+nether_wart_stage0.png,0
+nether_wart_stage1.png,0
+nether_wart_stage2.png,0
+note_block.png,1,full block
+oak_door_bottom.png,0
+oak_door_top.png,0
+oak_leaves.png,1,unused
+oak_log.png,1,full block
+oak_log_top.png,1,full block
+oak_planks.png,1,full block
+oak_sapling.png,1,cross
+oak_trapdoor.png,0
+observer_back.png,1,full block
+observer_back_on.png,1,full block
+observer_front.png,1,full block
+observer_side.png,0
+observer_top.png,2,full block,top
+obsidian.png,1,full block
+ochre_froglight_side.png,1,full block
+ochre_froglight_top.png,2,full block,top
+open_eyeblossom.png,1,cross
+open_eyeblossom_emissive.png,1,unused
+orange_candle.png,0
+orange_candle_lit.png,0
+orange_concrete.png,1,full block
+orange_concrete_powder.png,1,full block
+orange_glazed_terracotta.png,0
+orange_shulker_box.png,1,entity
+orange_stained_glass.png,1,full block
+orange_stained_glass_pane_top.png,0
+orange_terracotta.png,1,full block
+orange_tulip.png,1,cross
+orange_wool.png,1,full block
+oxeye_daisy.png,1,cross
+oxidized_chiseled_copper.png,1,full block
+oxidized_copper.png,1,full block
+oxidized_copper_bulb.png,1,full block
+oxidized_copper_bulb_lit.png,1,full block
+oxidized_copper_bulb_lit_powered.png,1,full block
+oxidized_copper_bulb_powered.png,1,full block
+oxidized_copper_door_bottom.png,0
+oxidized_copper_door_top.png,0
+oxidized_copper_grate.png,1,full block
+oxidized_copper_trapdoor.png,0
+oxidized_cut_copper.png,1,full block
+packed_ice.png,1,full block
+packed_mud.png,1,full block
+pale_hanging_moss.png,0
+pale_hanging_moss_tip.png,0
+pale_moss_block.png,1,full block
+pale_moss_carpet.png,1,unused
+pale_moss_carpet_side_small.png,0
+pale_moss_carpet_side_tall.png,0
+pale_oak_door_bottom.png,0
+pale_oak_door_top.png,0
+pale_oak_leaves.png,1,full block
+pale_oak_log.png,1,full block
+pale_oak_log_top.png,1,full block
+pale_oak_planks.png,1,full block
+pale_oak_sapling.png,1,cross
+pale_oak_trapdoor.png,1,full block
+pearlescent_froglight_side.png,1,full block
+pearlescent_froglight_top.png,1,full block
+peony_bottom.png,1,unused
+peony_top.png,0
+pink_candle.png,0
+pink_candle_lit.png,0
+pink_concrete.png,1,full block
+pink_concrete_powder.png,0
+pink_glazed_terracotta.png,1,full block
+pink_petals.png,1,top
+pink_petals_stem.png,1,unused
+pink_shulker_box.png,2,full block,entity
+pink_stained_glass.png,1,full block
+pink_stained_glass_pane_top.png,0
+pink_terracotta.png,1,full block
+pink_tulip.png,1,cross
+pink_wool.png,1,full block
+piston_bottom.png,0
+piston_inner.png,0
+piston_side.png,1,full block
+piston_top.png,1,full block
+piston_top_sticky.png,1,full block
+pitcher_crop_bottom.png,1,unused
+pitcher_crop_bottom_stage_1.png,0
+pitcher_crop_bottom_stage_2.png,0
+pitcher_crop_bottom_stage_3.png,1,unused
+pitcher_crop_bottom_stage_4.png,1,unused
+pitcher_crop_side.png,0
+pitcher_crop_top.png,1,top
+pitcher_crop_top_stage_3.png,0
+pitcher_crop_top_stage_4.png,0
+podzol_side.png,1,full block
+podzol_top.png,2,full block,top
+pointed_dripstone_down_base.png,0
+pointed_dripstone_down_frustum.png,0
+pointed_dripstone_down_middle.png,0
+pointed_dripstone_down_tip.png,0
+pointed_dripstone_down_tip_merge.png,0
+pointed_dripstone_up_base.png,0
+pointed_dripstone_up_frustum.png,0
+pointed_dripstone_up_middle.png,0
+pointed_dripstone_up_tip.png,0
+pointed_dripstone_up_tip_merge.png,0
+polished_andesite.png,1,full block
+polished_basalt_side.png,1,full block
+polished_basalt_top.png,2,full block,top
+polished_blackstone.png,1,full block
+polished_blackstone_bricks.png,1,full block
+polished_deepslate.png,1,full block
+polished_diorite.png,1,full block
+polished_granite.png,1,full block
+polished_tuff.png,1,full block
+poppy.png,1,cross
+potatoes_stage0.png,0
+potatoes_stage1.png,0
+potatoes_stage2.png,0
+potatoes_stage3.png,0
+potted_azalea_bush_plant.png,1,unused
+potted_azalea_bush_side.png,1,unused
+potted_azalea_bush_top.png,1,unused
+potted_flowering_azalea_bush_plant.png,1,unused
+potted_flowering_azalea_bush_side.png,1,unused
+potted_flowering_azalea_bush_top.png,1,unused
+powder_snow.png,1,full block
+powered_rail.png,1,unused
+powered_rail_on.png,1,unused
+prismarine.png,2,full block,animated
+prismarine_bricks.png,1,full block
+pumpkin_side.png,1,full block
+pumpkin_stem.png,1,unused
+pumpkin_top.png,2,full block,top
+purple_candle.png,0
+purple_candle_lit.png,0
+purple_concrete.png,1,full block
+purple_concrete_powder.png,1,full block
+purple_glazed_terracotta.png,1,full block
+purple_shulker_box.png,2,full block,entity
+purple_stained_glass.png,1,full block
+purple_stained_glass_pane_top.png,0
+purple_terracotta.png,1,full block
+purple_wool.png,0
+purpur_block.png,1,full block
+purpur_pillar.png,0
+purpur_pillar_top.png,2,full block,top
+quartz_block_bottom.png,1,full block
+quartz_block_side.png,1,full block
+quartz_block_top.png,2,full block,top
+quartz_bricks.png,1,full block
+quartz_pillar.png,1,full block
+quartz_pillar_top.png,2,full block,top
+rail.png,1,unused
+rail_corner.png,1,unused
+raw_copper_block.png,1,full block
+raw_gold_block.png,1,full block
+raw_iron_block.png,1,full block
+redstone_block.png,1,full block
+redstone_dust_dot.png,1,unused
+redstone_dust_line0.png,1,unused
+redstone_dust_line1.png,1,unused
+redstone_dust_overlay.png,1,unused
+redstone_lamp.png,1,full block
+redstone_lamp_on.png,1,full block
+redstone_ore.png,1,full block
+redstone_torch.png,0
+redstone_torch_off.png,0
+red_candle.png,0
+red_candle_lit.png,0
+red_concrete.png,1,full block
+red_concrete_powder.png,1,full block
+red_glazed_terracotta.png,1,full block
+red_mushroom.png,1,cross
+red_mushroom_block.png,1,full block
+red_nether_bricks.png,1,full block
+red_sand.png,1,full block
+red_sandstone.png,1,full block
+red_sandstone_bottom.png,2,full block,bottom
+red_sandstone_top.png,2,full block,top
+red_shulker_box.png,2,full block,animated
+red_stained_glass.png,1,full block
+red_stained_glass_pane_top.png,0
+red_terracotta.png,1,full block
+red_tulip.png,1,cross
+red_wool.png,1,full block
+reinforced_deepslate_bottom.png,2,full block,bottom
+reinforced_deepslate_side.png,1,full block
+reinforced_deepslate_top.png,2,full block,top
+repeater.png,1,unused
+repeater_on.png,1,unused
+repeating_command_block_back.png,2,full block,animated
+repeating_command_block_conditional.png,2,full block,animated
+repeating_command_block_front.png,2,full block,animated
+repeating_command_block_side.png,2,full block,animated
+resin_block.png,1,full block
+resin_bricks.png,1,full block
+resin_clump.png,0
+respawn_anchor_bottom.png,1,full block
+respawn_anchor_side0.png,1,full block
+respawn_anchor_side1.png,1,full block
+respawn_anchor_side2.png,0
+respawn_anchor_side3.png,0
+respawn_anchor_side4.png,1,full block
+respawn_anchor_top.png,3,full block,top,animated
+respawn_anchor_top_off.png,2,full block,top
+rooted_dirt.png,1,full block
+rose_bush_bottom.png,1,unused
+rose_bush_top.png,0
+sand.png,1,full block
+sandstone.png,1,full block
+sandstone_bottom.png,2,full block,bottom
+sandstone_top.png,1,full block
+scaffolding_bottom.png,1,unused
+scaffolding_side.png,1,unused
+scaffolding_top.png,1,top
+sculk.png,2,full block,animated
+sculk_catalyst_bottom.png,2,full block,bottom
+sculk_catalyst_side.png,1,full block
+sculk_catalyst_side_bloom.png,2,full block,animated
+sculk_catalyst_top.png,2,full block,top
+sculk_catalyst_top_bloom.png,3,full block,top,animated
+sculk_sensor_bottom.png,1,bottom
+sculk_sensor_side.png,1,unused
+sculk_sensor_tendril_active.png,2,animated,unused
+sculk_sensor_tendril_inactive.png,2,animated,unused
+sculk_sensor_top.png,1,unused
+sculk_shrieker_bottom.png,1,unused
+sculk_shrieker_can_summon_inner_top.png,2,animated,unused
+sculk_shrieker_inner_top.png,2,animated,unused
+sculk_shrieker_side.png,0
+sculk_shrieker_top.png,1,unused
+sculk_vein.png,1,animated
+seagrass.png,1,animated
+sea_lantern.png,2,full block,animated
+sea_pickle.png,1,unused
+short_dry_grass.png,1,cross
+short_grass.png,2,cross,unused
+shroomlight.png,1,full block
+shulker_box.png,2,full block,entity
+slime_block.png,1,full block
+small_amethyst_bud.png,1,cross
+small_dripleaf_side.png,1,unused
+small_dripleaf_stem_bottom.png,1,cross
+small_dripleaf_stem_top.png,2,cross,unused
+small_dripleaf_top.png,1,unused
+smithing_table_bottom.png,2,full block,bottom
+smithing_table_front.png,2,full block,directional
+smithing_table_side.png,2,full block,directional
+smithing_table_top.png,2,full block,top
+smoker_bottom.png,2,full block,bottom
+smoker_front.png,1,full block
+smoker_front_on.png,2,full block,animated
+smoker_side.png,1,full block
+smoker_top.png,2,full block,top
+smooth_basalt.png,1,full block
+smooth_stone.png,1,full block
+smooth_stone_slab_side.png,1,full block
+sniffer_egg_not_cracked_bottom.png,1,unused
+sniffer_egg_not_cracked_east.png,1,directional
+sniffer_egg_not_cracked_north.png,1,directional
+sniffer_egg_not_cracked_south.png,1,directional
+sniffer_egg_not_cracked_top.png,1,top
+sniffer_egg_not_cracked_west.png,1,directional
+sniffer_egg_slightly_cracked_bottom.png,1,bottom
+sniffer_egg_slightly_cracked_east.png,1,directional
+sniffer_egg_slightly_cracked_north.png,1,directional
+sniffer_egg_slightly_cracked_south.png,1,directional
+sniffer_egg_slightly_cracked_top.png,1,top
+sniffer_egg_slightly_cracked_west.png,1,directional
+sniffer_egg_very_cracked_bottom.png,1,bottom
+sniffer_egg_very_cracked_east.png,1,directional
+sniffer_egg_very_cracked_north.png,1,directional
+sniffer_egg_very_cracked_south.png,1,directional
+sniffer_egg_very_cracked_top.png,1,top
+sniffer_egg_very_cracked_west.png,1,directional
+snow.png,1,unused
+soul_campfire_fire.png,1,animated
+soul_campfire_log_lit.png,2,animated,unused
+soul_fire_0.png,1,animated
+soul_fire_1.png,1,animated
+soul_lantern.png,1,unused
+soul_sand.png,1,full block
+soul_soil.png,1,full block
+soul_torch.png,0
+spawner.png,1,full block
+sponge.png,1,full block
+spore_blossom.png,1,unused
+spore_blossom_base.png,1,unused
+spruce_door_bottom.png,0
+spruce_door_top.png,0
+spruce_leaves.png,1,unused
+spruce_log.png,1,full block
+spruce_log_top.png,1,full block
+spruce_planks.png,1,full block
+spruce_sapling.png,1,cross
+spruce_trapdoor.png,0
+stone.png,1,full block
+stonecutter_bottom.png,2,bottom,unused
+stonecutter_saw.png,2,animated,unused
+stonecutter_side.png,1,unused
+stonecutter_top.png,1,unused
+stone_bricks.png,1,full block
+stripped_acacia_log.png,1,full block
+stripped_acacia_log_top.png,1,full block
+stripped_bamboo_block.png,1,full block
+stripped_bamboo_block_top.png,1,full block
+stripped_birch_log.png,1,full block
+stripped_birch_log_top.png,1,full block
+stripped_cherry_log.png,0
+stripped_cherry_log_top.png,0
+stripped_crimson_stem.png,1,full block
+stripped_crimson_stem_top.png,1,full block
+stripped_dark_oak_log.png,1,full block
+stripped_dark_oak_log_top.png,0
+stripped_jungle_log.png,0
+stripped_jungle_log_top.png,0
+stripped_mangrove_log.png,0
+stripped_mangrove_log_top.png,0
+stripped_oak_log.png,1,full block
+stripped_oak_log_top.png,0
+stripped_pale_oak_log.png,0
+stripped_pale_oak_log_top.png,0
+stripped_spruce_log.png,1,full block
+stripped_spruce_log_top.png,1,full block
+stripped_warped_stem.png,1,full block
+stripped_warped_stem_top.png,1,full block
+structure_block.png,1,full block
+structure_block_corner.png,1,full block
+structure_block_data.png,1,full block
+structure_block_load.png,1,full block
+structure_block_save.png,1,full block
+sugar_cane.png,1,cross
+sunflower_back.png,1,unused
+sunflower_bottom.png,0
+sunflower_front.png,1,unused
+sunflower_top.png,2,cross,unused
+suspicious_gravel_0.png,1,full block
+suspicious_gravel_1.png,1,full block
+suspicious_gravel_2.png,1,full block
+suspicious_gravel_3.png,1,full block
+suspicious_sand_0.png,1,full block
+suspicious_sand_1.png,1,full block
+suspicious_sand_2.png,0
+suspicious_sand_3.png,0
+sweet_berry_bush_stage0.png,1,cross
+sweet_berry_bush_stage1.png,1,cross
+sweet_berry_bush_stage2.png,1,cross
+sweet_berry_bush_stage3.png,1,cross
+tall_dry_grass.png,1,cross
+tall_grass_bottom.png,1,unused
+tall_grass_top.png,1,unused
+tall_seagrass_bottom.png,1,animated
+tall_seagrass_top.png,1,animated
+target_side.png,1,full block
+target_top.png,2,full block,top
+terracotta.png,1,full block
+test_block_accept.png,1,full block
+test_block_fail.png,1,full block
+test_block_log.png,1,full block
+test_block_start.png,0
+test_instance_block.png,0
+tinted_glass.png,1,full block
+tnt_bottom.png,2,full block,bottom
+tnt_side.png,1,full block
+tnt_top.png,2,full block,top
+torch.png,0
+torchflower.png,1,cross
+torchflower_crop_stage0.png,1,cross
+torchflower_crop_stage1.png,1,cross
+trial_spawner_bottom.png,2,full block,bottom
+trial_spawner_side_active.png,1,full block
+trial_spawner_side_active_ominous.png,1,full block
+trial_spawner_side_inactive.png,1,full block
+trial_spawner_side_inactive_ominous.png,1,full block
+trial_spawner_top_active.png,2,full block,top
+trial_spawner_top_active_ominous.png,2,full block,top
+trial_spawner_top_ejecting_reward.png,2,full block,top
+trial_spawner_top_ejecting_reward_ominous.png,2,full block,top
+trial_spawner_top_inactive.png,2,full block,top
+trial_spawner_top_inactive_ominous.png,2,full block,top
+tripwire.png,1,unused
+tripwire_hook.png,1,unused
+tube_coral.png,1,cross
+tube_coral_block.png,1,full block
+tube_coral_fan.png,1,cross
+tuff.png,1,full block
+tuff_bricks.png,1,full block
+twisting_vines.png,1,cross
+twisting_vines_plant.png,1,cross
+vault_bottom.png,2,full block,bottom
+vault_bottom_ominous.png,2,full block,bottom
+vault_front_ejecting.png,1,full block
+vault_front_ejecting_ominous.png,1,full block
+vault_front_off.png,1,full block
+vault_front_off_ominous.png,1,full block
+vault_front_on.png,1,full block
+vault_front_on_ominous.png,1,full block
+vault_side_off.png,1,full block
+vault_side_off_ominous.png,1,full block
+vault_side_on.png,1,full block
+vault_side_on_ominous.png,1,full block
+vault_top.png,2,full block,top
+vault_top_ejecting.png,2,full block,top
+vault_top_ejecting_ominous.png,2,full block,top
+vault_top_ominous.png,2,full block,top
+verdant_froglight_side.png,1,full block
+verdant_froglight_top.png,1,full block
+vine.png,1,unused
+warped_door_bottom.png,0
+warped_door_top.png,0
+warped_fungus.png,1,cross
+warped_nylium.png,2,full block,top
+warped_nylium_side.png,1,full block
+warped_planks.png,1,full block
+warped_roots.png,1,cross
+warped_roots_pot.png,1,unused
+warped_stem.png,2,full block,animated
+warped_stem_top.png,0
+warped_trapdoor.png,1,full block
+warped_wart_block.png,1,full block
+water_flow.png,1,unused
+water_overlay.png,1,unused
+water_still.png,1,unused
+weathered_chiseled_copper.png,0
+weathered_copper.png,1,full block
+weathered_copper_bulb.png,1,full block
+weathered_copper_bulb_lit.png,1,full block
+weathered_copper_bulb_lit_powered.png,1,full block
+weathered_copper_bulb_powered.png,1,full block
+weathered_copper_door_bottom.png,0
+weathered_copper_door_top.png,0
+weathered_copper_grate.png,1,full block
+weathered_copper_trapdoor.png,0
+weathered_cut_copper.png,1,full block
+weeping_vines.png,1,cross
+weeping_vines_plant.png,1,cross
+wet_sponge.png,1,full block
+wheat_stage0.png,0
+wheat_stage1.png,0
+wheat_stage2.png,0
+wheat_stage3.png,0
+wheat_stage4.png,0
+wheat_stage5.png,0
+wheat_stage6.png,0
+wheat_stage7.png,0
+white_candle.png,0
+white_candle_lit.png,0
+white_concrete.png,1,full block
+white_concrete_powder.png,1,full block
+white_glazed_terracotta.png,1,full block
+white_shulker_box.png,2,full block,entity
+white_stained_glass.png,1,full block
+white_stained_glass_pane_top.png,0
+white_terracotta.png,1,full block
+white_tulip.png,1,cross
+white_wool.png,1,full block
+wildflowers.png,1,top
+wildflowers_stem.png,1,unused
+wither_rose.png,1,cross
+yellow_candle.png,0
+yellow_candle_lit.png,0
+yellow_concrete.png,1,full block
+yellow_concrete_powder.png,1,full block
+yellow_glazed_terracotta.png,1,full block
+yellow_shulker_box.png,2,full block,entity
+yellow_stained_glass.png,1,full block
+yellow_stained_glass_pane_top.png,0
+yellow_terracotta.png,1,full block
+yellow_wool.png,1,full block

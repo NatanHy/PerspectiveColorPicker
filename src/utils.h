@@ -8,7 +8,7 @@ std::string formatFilename(const std::string& input);
 template <size_t N>
 std::unordered_set<std::string> filterSelected(
     const std::array<bool, N>& flags,
-    const std::array<std::string, N>& values)
+    const std::array<std::string_view, N>& tags)
 {
     std::unordered_set<std::string> result;
 
@@ -16,7 +16,7 @@ std::unordered_set<std::string> filterSelected(
     {
         if (flags[i])
         {
-            result.insert(values[i]);
+            result.insert(std::string(tags[i]));
         }
     }
 
