@@ -21,11 +21,11 @@ target_include_directories(app PRIVATE
     include
     external/imgui
     external/rlImGui
-    external/raylib/include
+    external/raylib/src
 )
 
 target_link_directories(app PRIVATE
-    external/raylib/lib
+    external/raylib/src
 )
 
 target_link_libraries(app PRIVATE
@@ -49,11 +49,11 @@ add_executable(test
 
 target_include_directories(test PRIVATE
     include
-    external/raylib/include
+    external/raylib/src
 )
 
 target_link_directories(test PRIVATE
-    external/raylib/lib
+    external/raylib/src
 )
 
 target_link_libraries(test PRIVATE
