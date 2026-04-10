@@ -26,14 +26,20 @@ public:
     void drawRectangle(float x, float y, float width, float height, Vec3 color, unsigned char alpha=255);
     void drawText(std::string text, float x, float y, int font_size);
     
+    const int width() const;
+    const int height() const;
+    const bool sizeChanged();
+
     std::string textureName(const TextureInfo& tex);
     
-    int width, height;
     int numTextures=0;
     double textureBrightness = 1.0;
     
     private:
     void loadTexture(const TextureInfo& tex);
+
+    int m_prevWidth=0;
+    int m_prevHeight=0;
 
     size_t nextID=0;
     std::unordered_map<std::string, Texture2D> loadedTextures;

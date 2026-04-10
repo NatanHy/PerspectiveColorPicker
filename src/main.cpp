@@ -12,9 +12,6 @@
 #include "utils.h"
 #include "filter.h"
 
-#define W_TEST 160
-#define H_TEST 67
-
 constexpr std::array<std::string_view, NUM_TAGS> tags = TAGS;
 
 enum class View {
@@ -38,8 +35,13 @@ class GUIState {
         if (currentView == View::Image && imgPath != "") {
             std::cout << "Loading " << imgPath << std::endl;
             m_imgParser.loadImage(imgPath);
-            m_avgGrid = m_imgParser.averageRGBS(W_TEST, H_TEST);
-            m_seqGrid = Grid<TextureSequence>(W_TEST, H_TEST);
+            
+            double ratio = (double)m_imgParser.height() / (double)m_imgParser.width();
+            m_imgWidth = imgSizeHandle;
+            m_imgHeight = (int)((double)m_imgWidth * ratio);
+
+            m_avgGrid = m_imgParser.averageRGBS(m_imgWidth, m_imgHeight);
+            m_seqGrid = Grid<TextureSequence>(m_imgWidth, m_imgHeight);
 
             using std::chrono::high_resolution_clock;
             using std::chrono::duration_cast;
@@ -48,8 +50,8 @@ class GUIState {
             auto t1 = high_resolution_clock::now();
 
             #pragma omp parallel for collapse(2) firstprivate(m_optimizer)
-            for (int x = 0; x < W_TEST; x++) {
-                for (int y = 0 ; y < H_TEST; y++) {
+            for (int x = 0; x < m_imgWidth; x++) {
+                for (int y = 0 ; y < m_imgHeight; y++) {
                     auto match = m_optimizer.getBestMatch(m_avgGrid.at(x, y), layers, false);
                     m_seqGrid.at(x, y) = std::move(match);
                 }
@@ -76,6 +78,18 @@ class GUIState {
         return m_error / 16581.375f; // Divide by 255^3, return as percentage
     }
 
+    const TextureParser& parser() const {
+        return m_parser;
+    }
+
+    const int imgWidth() const {
+        return m_imgWidth;
+    }
+
+    const int imgHeight() const {
+        return m_imgHeight;
+    }
+
     const TextureSequence& best() const {
         return m_best;
     }
@@ -95,6 +109,7 @@ class GUIState {
     int numTransparent = 256;
     float color[3] = {1.0f, 0.0f, 0.0f};
     std::string imgPath;
+    int imgSizeHandle = 100;
 
     std::array<bool, NUM_TAGS> checkedTags;
     
@@ -124,6 +139,8 @@ class GUIState {
     
     TextureParser m_parser;
     ImageParser m_imgParser;
+    int m_imgWidth;
+    int m_imgHeight;
 
     Grid<Vec3> m_avgGrid;
     Grid<TextureSequence> m_seqGrid;
@@ -219,6 +236,7 @@ void drawColorPicker(Renderer& renderer, GUIState& state) {
 }
 
 void drawFilter(Renderer& renderer, GUIState& state) {
+    
 }
 
 void drawImage(Renderer& renderer, GUIState& state) {
@@ -234,9 +252,9 @@ void drawImage(Renderer& renderer, GUIState& state) {
         return;
     }
 
-    double scale = renderer.width / (W_TEST * 16.0);
-    for (size_t x = 0; x < W_TEST; x++) {
-        for (size_t y = 0; y < H_TEST; y++) {
+    double scale = renderer.width() / (state.imgWidth() * 16.0);
+    for (size_t x = 0; x < state.imgWidth(); x++) {
+        for (size_t y = 0; y < state.imgHeight(); y++) {
             auto seq = state.seqAt(x, y);
             renderer.drawLayers(x * 16 * scale, 50 + y * 16 * scale, scale, seq, 0, false);
         }
@@ -249,14 +267,24 @@ void drawImage(Renderer& renderer, GUIState& state) {
     int gridY = (int)((mouse.y - 50) / (16 * scale));
 
     // Check bounds
-    if (gridX >= 0 && gridX < (int)W_TEST &&
-        gridY >= 0 && gridY < (int)H_TEST)
+    if (gridX >= 0 && gridX < (int)state.imgWidth() &&
+        gridY >= 0 && gridY < (int)state.imgHeight())
     {
         auto hoveredSeq = state.seqAt(gridX, gridY);
 
         renderer.drawRectangle(0, 600, 500, 290, {0, 0, 0}, 100);
         renderer.drawLayers(10, 610, 10.0, hoveredSeq, 20, true);
     }
+
+    ImGui::Begin("Image Size");
+
+    ImGui::SliderInt("Size", &state.imgSizeHandle, 5, 300);
+    if (ImGui::Button("Apply"))
+    {
+        state.update();
+    }
+
+    ImGui::End();
 }
 
 void drawCurrentView(Renderer& renderer, GUIState& state) {
@@ -303,6 +331,10 @@ int main() {
 
         drawNavbar(state);
         drawCurrentView(renderer, state);
+
+        if (renderer.sizeChanged()) {
+            state.update();
+        }
 
         rlImGuiEnd();
         renderer.End();

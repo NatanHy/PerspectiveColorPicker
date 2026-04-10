@@ -3,12 +3,32 @@
 #include "Renderer.h"
 #include "utils.h"
 
-Renderer::Renderer(int width, int height, const std::string& title) :
-    width(width),
-    height(height)
+Renderer::Renderer(int width, int height, const std::string& title)
 {
+    SetConfigFlags(FLAG_WINDOW_RESIZABLE);
     InitWindow(width, height, title.c_str());
     SetTargetFPS(60);
+}
+
+const int Renderer::width() const {
+    return GetScreenWidth();
+}
+
+const int Renderer::height() const {
+    return GetScreenHeight();
+}
+
+const bool Renderer::sizeChanged() {
+    bool changed = false;
+    if (m_prevWidth != width()) {
+        m_prevWidth = width();
+        changed = true;
+    }
+    if (m_prevHeight != height()) {
+        m_prevHeight = height();
+        changed = true;
+    }
+    return changed;
 }
 
 Renderer::~Renderer()

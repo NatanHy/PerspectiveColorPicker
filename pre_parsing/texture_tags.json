@@ -1068,12 +1068,18 @@
     "dried_ghast_hydration_3_north.png": [
         "unused"
     ],
-    "dried_ghast_hydration_3_south.png": [],
-    "dried_ghast_hydration_3_tentacles.png": [],
+    "dried_ghast_hydration_3_south.png": [
+        "unused"
+    ],
+    "dried_ghast_hydration_3_tentacles.png": [
+        "unused"
+    ],
     "dried_ghast_hydration_3_top.png": [
         "unused"
     ],
-    "dried_ghast_hydration_3_west.png": [],
+    "dried_ghast_hydration_3_west.png": [
+        "unused"
+    ],
     "dried_kelp_bottom.png": [
         "full block",
         "bottom",

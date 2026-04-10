@@ -348,6 +348,14 @@ class ImageParser {
         return m_image.path;
     }
 
+    const int width() const {
+        return m_image.width;
+    }
+
+    const int height() const {
+        return m_image.height;
+    }
+
     private:
     TextureData m_image;
 };
