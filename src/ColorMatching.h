@@ -2,6 +2,7 @@
 
 #include <random>
 #include <utility>
+#include <algorithm>
 
 #include "TextureParser.h"
 
@@ -22,6 +23,16 @@ class TextureRandomizer;
 
 class TextureSequence {
     public:
+    bool operator== (const TextureSequence& other) const {
+        if (!(m_opaque == other.m_opaque)) {
+            return false;
+        }
+        if (length() != other.length()) {
+            return false;
+        }
+        return std::equal(m_translucentSeq.begin(), m_translucentSeq.end(), other.m_translucentSeq.begin());
+    }
+
     std::vector<TextureInfo> seq() const {
         std::vector<TextureInfo> s = {m_opaque};
         for (auto& x : m_translucentSeq) {
@@ -31,13 +42,13 @@ class TextureSequence {
         return s;
     }
 
-    double error(const Vec3& targetRGB);
+    double error(const Vec3& targetRGB) const;
 
-    int length() {
+    int length() const {
         return m_translucentSeq.size() + 1;
     }
 
-    int numTranslucent() {
+    int numTranslucent() const {
         return m_translucentSeq.size();
     }
 
@@ -88,7 +99,7 @@ class TextureSequence {
         }
     }
 
-    Vec3 blendRGB() {
+    Vec3 blendRGB() const {
         Vec3 accRGB = m_opaque.parsedTexture.avgRGB; 
 
         for (const auto& x : m_translucentSeq) {
@@ -100,7 +111,7 @@ class TextureSequence {
         return accRGB;
     }
 
-    Vec3 variance() {
+    Vec3 variance() const {
         Vec3 accRGB = m_opaque.parsedTexture.avgRGB; 
         Vec3 accVar = m_opaque.parsedTexture.varRGB;
 

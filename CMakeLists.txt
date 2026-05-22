@@ -8,6 +8,7 @@ add_executable(app
     src/Renderer.cpp
     src/ColorMatching.cpp
     src/utils.cpp
+    src/ClipboardWatcher.cpp
 
     external/imgui/imgui.cpp
     external/imgui/imgui_draw.cpp
@@ -37,28 +38,3 @@ target_link_libraries(app PRIVATE
 
 find_package(OpenMP REQUIRED)
 target_link_libraries(app PRIVATE OpenMP::OpenMP_CXX)
-
-# TEST
-
-add_executable(test
-    src/test.cpp
-    src/Renderer.cpp
-    src/ColorMatching.cpp
-    src/utils.cpp
-)
-
-target_include_directories(test PRIVATE
-    include
-    external/raylib/src
-)
-
-target_link_directories(test PRIVATE
-    external/raylib/src
-)
-
-target_link_libraries(test PRIVATE
-    raylib
-    opengl32
-    gdi32
-    winmm
-)

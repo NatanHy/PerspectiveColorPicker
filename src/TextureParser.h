@@ -4,9 +4,16 @@
 #include <string>
 #include <filesystem>
 #include <iostream>
+#include <unordered_set>
+#include <unordered_map>
+
+#include <chrono>
+#include <thread>
 
 #include "stb_image.h"
 #include "Vectors.h"
+#include "Tags.h"
+
 namespace fs = std::filesystem;
 
 enum FACING {
@@ -100,9 +107,28 @@ private:
     }
 };
 
-struct TextureInfo {
+class TextureInfo {
+    public:
+    TextureInfo()=default;
+    TextureInfo(TextureData textureData, std::unordered_set<std::string> tags) :
+        textureData(textureData),
+        tags(tags)
+    {}
+
+    bool operator==(const TextureInfo& other) const {
+        return textureData.path == other.textureData.path;
+    }
+    
+    bool shouldShade() const {
+        if (tags.find("cross") != tags.end() || tags.find("TODO") != tags.end()) {
+            return false;
+        }
+        return true;
+    }
+
     TextureData textureData;
     ParsedData parsedTexture;
+    std::unordered_set<std::string> tags;
 };
 
 template <typename T>
@@ -143,7 +169,9 @@ public:
         FACING facing=NORTH_SOUTH
     )
         : m_directories(directories), filter(filter), facing(facing)
-        {}
+    {
+        parseTagsFile(TAGS_PATH);
+    }
 
     TextureData loadTextureFromFile(std::string path) {
         TextureData tex;
@@ -181,9 +209,11 @@ public:
 
             for (const auto& entry : fs::recursive_directory_iterator(dir)) {
                 if (entry.is_regular_file() && entry.path().extension() == ".png") {
-                    auto tex = loadTextureFromFile(entry.path().string());
+                    auto path = entry.path().string();
+                    auto tex = loadTextureFromFile(path);
                     if (tex.width == 16 && tex.height == 16) {
-                        m_textures.push_back({tex, {}});
+                        TextureInfo info(tex, tags(getFilename(path)));
+                        m_textures.push_back(info);
                     }
                 }
             }
@@ -195,14 +225,16 @@ public:
         m_translucentTextures.clear();
 
         for (auto& tex : m_textures) {
-            double shade;
-            switch (facing) {
-                case (NORTH_SOUTH):
-                    shade = 0.8;
-                    break;
-                case (EAST_WEST):
-                    shade = 0.6;
-                    break;
+            double shade = 1.0;
+            if (tex.shouldShade()) {
+                switch (facing) {
+                    case (NORTH_SOUTH):
+                        shade = 0.8;
+                        break;
+                    case (EAST_WEST):
+                        shade = 0.6;
+                        break;
+                }
             }
 
             ParsedData parsed;
@@ -269,21 +301,69 @@ public:
         }
     }
 
+    void parseTagsFile(const std::string& path) {
+        std::ifstream file(path);
+
+        if (!file.is_open()) {
+            throw std::runtime_error("Failed to open file: " + path);
+        }
+
+        std::string line;
+        while (std::getline(file, line)) {
+            if (line.empty()) continue;
+
+            std::istringstream iss(line);
+
+            std::string filename;
+            std::string num_items_str;
+
+            // Read filename
+            if (!std::getline(iss, filename, ',')) {
+                throw std::runtime_error("Malformed line: " + line);
+            }
+
+            // Read number of items
+            if (!std::getline(iss, num_items_str, ',')) {
+                throw std::runtime_error("Malformed line: " + line);
+            }
+
+            size_t num_items = std::stoul(num_items_str);
+            
+            std::unordered_set<std::string> items = {};
+            if (num_items) {
+                std::string tag;
+    
+                while (std::getline(iss, tag, ',')) {
+                    if (!tag.empty()) {
+                        items.insert(tag);
+                    }
+                }
+            }
+            m_tags[filename] = std::move(items);
+        }
+    }
+
     const std::vector<TextureInfo>& allTextures() const {
         return m_textures;
     }
-
+    
     const std::vector<TextureInfo>& opaqueTextures() const {
         return m_opaqueTextures;
     }
-
+    
     const std::vector<TextureInfo>& translucentTextures() const {
         return m_translucentTextures;
     }
 
+    const std::unordered_set<std::string>& tags(std::string filename) const {
+        return m_tags[filename];
+    }
+    
     Filter filter;
     FACING facing;
-private:
+    private:
+
+    inline static std::unordered_map<std::string, std::unordered_set<std::string>> m_tags;
     std::vector<std::string> m_directories;
     std::vector<TextureInfo> m_textures;
     std::vector<TextureInfo> m_opaqueTextures;
@@ -294,26 +374,34 @@ class ImageParser {
     public:
     void loadImage(std::string path) {
         m_image.path = path;
-
         int forceChannels = 4;
+        int tries = 3;
 
-        unsigned char* data = stbi_load(
-            m_image.path.c_str(),
-            &m_image.width,
-            &m_image.height,
-            &m_image.channels,
-            forceChannels // Force RGBA
-        );
 
-        if (!data) {
-            throw std::runtime_error("Failed to load data: " + m_image.path);
+        while (tries > 0) {
+            unsigned char* data = stbi_load(
+                m_image.path.c_str(),
+                &m_image.width,
+                &m_image.height,
+                &m_image.channels,
+                forceChannels // Force RGBA
+            );
+    
+            if (!data) {
+                std::cerr << "WARNING: Failed to load image data from " + m_image.path + " retrying...\n";
+                tries--;
+
+                std::this_thread::sleep_for(std::chrono::seconds(1));
+            } else {
+                size_t size = m_image.width * m_image.height * forceChannels;
+        
+                m_image.data.assign(data, data + size);
+        
+                stbi_image_free(data);
+                return;
+            }
         }
-
-        size_t size = m_image.width * m_image.height * forceChannels;
-
-        m_image.data.assign(data, data + size);
-
-        stbi_image_free(data);
+        throw std::runtime_error("Failed to load image data: " + m_image.path);
     }
 
     Grid<Vec3> averageRGBS(int width, int height) {
@@ -321,23 +409,25 @@ class ImageParser {
         int cellH = m_image.height / height;
 
         Grid<Vec3> grid(width, height);
-        
+        Grid<double> counts(width, height);
+
         for (size_t x = 0; x < m_image.width; ++x) {
             for (size_t y = 0; y < m_image.height; ++y) {
                 size_t gridX = x / cellW;
                 size_t gridY = y / cellH;
 
                 // Optional safety clamp (important if not perfectly divisible)
-                if (gridX >= width) gridX = width - 1;
-                if (gridY >= height) gridY = height - 1;
+                if (gridX >= width) continue;
+                if (gridY >= height) continue;
 
                 grid.at(gridX, gridY) = grid.at(gridX, gridY) + fromRGBA(m_image.at(x, y));
+                counts.at(gridX, gridY) = counts.at(gridX, gridY) + 1;
             }
         }
 
         for (size_t x = 0; x < width; ++x) {
             for (size_t y = 0; y < height; ++y) {
-                grid.at(x, y) = grid.at(x, y) * (1.0 / (cellW * cellH));
+                grid.at(x, y) = grid.at(x, y) * (1.0 / counts.at(x, y));
             }
         }
 

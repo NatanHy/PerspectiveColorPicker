@@ -2,15 +2,18 @@
 #include <array>
 #include <cmath>
 #include <omp.h>
+#include <fstream>
 
 #include "raylib.h"
 #include "rlImGui.h"
 #include "imgui.h"
+#include "rlgl.h"
 
 #include "ColorMatching.h"
 #include "Renderer.h"
 #include "utils.h"
 #include "filter.h"
+#include "ClipboardWatcher.h"
 
 constexpr std::array<std::string_view, NUM_TAGS> tags = TAGS;
 
@@ -31,14 +34,15 @@ class GUIState {
 
     void update() {
         updateParser();
+        imgChanged = true;
 
         if (currentView == View::Image && imgPath != "") {
             std::cout << "Loading " << imgPath << std::endl;
             m_imgParser.loadImage(imgPath);
             
             double ratio = (double)m_imgParser.height() / (double)m_imgParser.width();
-            m_imgWidth = imgSizeHandle;
-            m_imgHeight = (int)((double)m_imgWidth * ratio);
+            m_imgWidth = imgSize;
+            m_imgHeight = (int)std::ceil(((double)m_imgWidth * ratio));
 
             m_avgGrid = m_imgParser.averageRGBS(m_imgWidth, m_imgHeight);
             m_seqGrid = Grid<TextureSequence>(m_imgWidth, m_imgHeight);
@@ -52,7 +56,7 @@ class GUIState {
             #pragma omp parallel for collapse(2) firstprivate(m_optimizer)
             for (int x = 0; x < m_imgWidth; x++) {
                 for (int y = 0 ; y < m_imgHeight; y++) {
-                    auto match = m_optimizer.getBestMatch(m_avgGrid.at(x, y), layers, false);
+                    auto match = m_optimizer.getBestMatch(m_avgGrid.at(x, y), layers, imgLocalSearch);
                     m_seqGrid.at(x, y) = std::move(match);
                 }
             }
@@ -102,6 +106,28 @@ class GUIState {
         return m_seqGrid.at(x, y);
     }
 
+    void pollClipboard() {
+        std::ifstream file("clipboard/clipboard.meta");
+        if (!file.is_open()) {
+            return; // no meta yet
+        }
+
+        std::string newHash;
+        std::getline(file, newHash);
+
+        if (newHash.empty()) {
+            return;
+        }
+
+        // Compare with stored hash
+        if (newHash != mImgHash) {
+            mImgHash = newHash;
+
+            // Update path so your system reloads the image
+            imgPath = "clipboard/clipboard.png";
+            update();
+        }
+    }
     View currentView;
 
     int layers = 2;
@@ -109,7 +135,11 @@ class GUIState {
     int numTransparent = 256;
     float color[3] = {1.0f, 0.0f, 0.0f};
     std::string imgPath;
-    int imgSizeHandle = 100;
+    int imgSize = 50;
+    bool imgLocalSearch = false;
+
+    RenderTexture2D imgCache;
+    bool imgChanged = true;
 
     std::array<bool, NUM_TAGS> checkedTags;
     
@@ -141,6 +171,7 @@ class GUIState {
     ImageParser m_imgParser;
     int m_imgWidth;
     int m_imgHeight;
+    std::string mImgHash;
 
     Grid<Vec3> m_avgGrid;
     Grid<TextureSequence> m_seqGrid;
@@ -169,11 +200,6 @@ void drawNavbar(GUIState& state) {
         state.currentView = View::ColorPicker;
         state.update();
     }     
-    ImGui::SameLine();
-    if (ImGui::Button("Filter")) { 
-        state.currentView = View::Filter;
-        state.update();
-    }
     ImGui::SameLine();
     if (ImGui::Button("Image")) {
         state.currentView = View::Image;
@@ -239,6 +265,42 @@ void drawFilter(Renderer& renderer, GUIState& state) {
     
 }
 
+void createImgCache(Renderer& renderer, GUIState& state)
+{
+    int width = renderer.width();
+    int height = renderer.height();
+
+    state.imgCache = LoadRenderTexture(width, height);
+    SetTextureFilter(state.imgCache.texture, TEXTURE_FILTER_POINT);
+    rlSetBlendFactorsSeparate(RL_SRC_ALPHA, RL_ONE_MINUS_SRC_ALPHA, RL_ONE, RL_ONE, RL_FUNC_ADD, RL_BLEND_ALPHA);
+
+    BeginTextureMode(state.imgCache);
+    BeginBlendMode(RL_BLEND_CUSTOM_SEPARATE);
+    ClearBackground(WHITE);
+
+    for (size_t x = 0; x < state.imgWidth(); x++) {
+        for (size_t y = 0; y < state.imgHeight(); y++) {
+            auto seq = state.seqAt(x, y);
+            float px = x * 16;
+            float py = y * 16;
+
+            renderer.drawLayers(
+                px,
+                50 + py,
+                1,
+                seq,
+                0,
+                false
+            );
+        }
+    }
+
+    state.imgChanged = false;
+
+    EndBlendMode();
+    EndTextureMode();
+}
+
 void drawImage(Renderer& renderer, GUIState& state) {
     if (IsFileDropped()) {
         FilePathList files = LoadDroppedFiles();
@@ -255,14 +317,14 @@ void drawImage(Renderer& renderer, GUIState& state) {
     double scale = renderer.width() / (state.imgWidth() * 16.0);
     for (size_t x = 0; x < state.imgWidth(); x++) {
         for (size_t y = 0; y < state.imgHeight(); y++) {
-            auto seq = state.seqAt(x, y);
-            renderer.drawLayers(x * 16 * scale, 50 + y * 16 * scale, scale, seq, 0, false);
-        }
+            auto seq = state.seqAt(x, y); 
+            renderer.drawLayers(x * 16 * scale, 50 + y * 16 * scale, scale, seq, 0, false); 
+        } 
     }
-
+    
     // --- Mouse picking ---
     Vector2 mouse = GetMousePosition();
-
+    
     int gridX = (int)(mouse.x / (16 * scale));
     int gridY = (int)((mouse.y - 50) / (16 * scale));
 
@@ -272,13 +334,22 @@ void drawImage(Renderer& renderer, GUIState& state) {
     {
         auto hoveredSeq = state.seqAt(gridX, gridY);
 
-        renderer.drawRectangle(0, 600, 500, 290, {0, 0, 0}, 100);
-        renderer.drawLayers(10, 610, 10.0, hoveredSeq, 20, true);
+        auto width = 500;
+        auto height = 290;
+        auto recX = 0;
+        auto recY = renderer.height() - height - 20;
+        if (mouse.x < width && mouse.y > recY) {
+            recX = renderer.width() - width - 20;
+        }
+
+        renderer.drawRectangle(recX, recY, width, height, {0, 0, 0}, 100);
+        renderer.drawLayers(recX + 10, recY + 10, 10.0, hoveredSeq, 20, true);
     }
 
     ImGui::Begin("Image Size");
 
-    ImGui::SliderInt("Size", &state.imgSizeHandle, 5, 300);
+    ImGui::SliderInt("Size", &state.imgSize, 5, 300);
+    ImGui::Checkbox("Local Search", &state.imgLocalSearch);
     if (ImGui::Button("Apply"))
     {
         state.update();
@@ -323,6 +394,10 @@ int main() {
     rlImGuiSetup(true); // enable docking
 
     state.currentView = View::ColorPicker;
+
+    // Start clipboard listener
+    ClipboardWatcher clipboardWatcher;
+    clipboardWatcher.start();
     
     while (!renderer.ShouldClose())
     {
@@ -336,9 +411,14 @@ int main() {
             state.update();
         }
 
+        state.pollClipboard();
+
         rlImGuiEnd();
         renderer.End();
     }
+
+    // Stop python listener
+    clipboardWatcher.stop();
 
     rlImGuiShutdown();
     return 0;

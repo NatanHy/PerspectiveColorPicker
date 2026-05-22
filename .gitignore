@@ -70,3 +70,5 @@ cmake-build-*/
 # If you build raylib from source inside your project:
 raylib/build/
 raylib/src/*.o
+
+test_images

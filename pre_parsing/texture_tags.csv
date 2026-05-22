@@ -374,10 +374,10 @@ dried_ghast_hydration_2_west.png,1,unused
 dried_ghast_hydration_3_bottom.png,1,unused
 dried_ghast_hydration_3_east.png,1,unused
 dried_ghast_hydration_3_north.png,1,unused
-dried_ghast_hydration_3_south.png,0
-dried_ghast_hydration_3_tentacles.png,0
+dried_ghast_hydration_3_south.png,1,unused
+dried_ghast_hydration_3_tentacles.png,1,unused
 dried_ghast_hydration_3_top.png,1,unused
-dried_ghast_hydration_3_west.png,0
+dried_ghast_hydration_3_west.png,1,unused
 dried_kelp_bottom.png,3,full block,bottom,unused
 dried_kelp_side.png,1,full block
 dried_kelp_top.png,2,full block,top
@@ -848,6 +848,7 @@ short_dry_grass.png,1,cross
 short_grass.png,2,cross,unused
 shroomlight.png,1,full block
 shulker_box.png,2,full block,entity
+sky.png,1,TODO
 slime_block.png,1,full block
 small_amethyst_bud.png,1,cross
 small_dripleaf_side.png,1,unused
@@ -929,8 +930,8 @@ stripped_mangrove_log.png,0
 stripped_mangrove_log_top.png,0
 stripped_oak_log.png,1,full block
 stripped_oak_log_top.png,0
-stripped_pale_oak_log.png,0
-stripped_pale_oak_log_top.png,0
+stripped_pale_oak_log.png,1,full block
+stripped_pale_oak_log_top.png,1,full block
 stripped_spruce_log.png,1,full block
 stripped_spruce_log_top.png,1,full block
 stripped_warped_stem.png,1,full block

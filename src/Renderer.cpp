@@ -69,6 +69,7 @@ void Renderer::loadTexture(const TextureInfo& tex)
 { 
     Image image = LoadImage(tex.textureData.path.c_str());
     Texture2D tex2d = LoadTextureFromImage(image);
+    SetTextureFilter(tex2d, TEXTURE_FILTER_POINT);
     loadedTextures.insert({tex.textureData.path, tex2d});
     UnloadImage(image);
 }
@@ -81,20 +82,22 @@ void Renderer::drawTexture(float x, float y, float scale, const TextureInfo& tex
 
     auto tex2d = loadedTextures[tex.textureData.path];
 
-    Color tint = {
-        (unsigned char)(255 * textureBrightness),
-        (unsigned char)(255 * textureBrightness),
-        (unsigned char)(255 * textureBrightness),
-        255};
+    unsigned char t = 255;
+    if (tex.shouldShade()) {
+        t = (unsigned char)(255 * textureBrightness);
+    } 
+
+    Color tint = {t, t, t, 255};
 
     DrawTextureEx(tex2d, (Vector2){ x, y }, 0.0f, scale, tint);
 }
 
 void Renderer::drawLayers(float x, float y, float scale, const TextureSequence& textures, float offset, bool text) {
-    for (int i = 0; i < textures.seq().size(); ++i) {
+    const auto seq = textures.seq();
+    for (int i = 0; i < seq.size(); ++i) {
         float xi = x + offset * i;
         float yi = y + offset * i;
-        auto tex = textures.seq()[i];
+        auto tex = seq[i];
         drawTexture(xi, yi, scale, tex);
 
         if (text) {

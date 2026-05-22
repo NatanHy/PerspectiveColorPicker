@@ -40,13 +40,13 @@ TextureInfo closest(const std::vector<TextureInfo>& textures, const Vec3 targetR
     return *best;
 }
 
-double TextureSequence::error(const Vec3& targetRGB) {
+double TextureSequence::error(const Vec3& targetRGB) const {
     return computeError(blendRGB(), targetRGB);
 }
 
 TextureSequence Optimizer::getBestMatch(const Vec3& targetRGB, int maxLayers, bool localSearch) {
     auto bestGreedy = getBestMatchGreedy(targetRGB, maxLayers);
-
+    
     if (localSearch) {
         return getBestMatchLocalSearch(bestGreedy, targetRGB, maxLayers);
     } 
