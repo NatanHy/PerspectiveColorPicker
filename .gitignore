@@ -72,3 +72,4 @@ raylib/build/
 raylib/src/*.o
 
 test_images
+clipboard
