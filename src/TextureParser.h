@@ -405,29 +405,28 @@ class ImageParser {
     }
 
     Grid<Vec3> averageRGBS(int width, int height) {
-        int cellW = m_image.width / width;
-        int cellH = m_image.height / height;
-
         Grid<Vec3> grid(width, height);
         Grid<double> counts(width, height);
 
         for (size_t x = 0; x < m_image.width; ++x) {
             for (size_t y = 0; y < m_image.height; ++y) {
-                size_t gridX = x / cellW;
-                size_t gridY = y / cellH;
 
-                // Optional safety clamp (important if not perfectly divisible)
-                if (gridX >= width) continue;
-                if (gridY >= height) continue;
+                size_t gridX = (x * width) / m_image.width;
+                size_t gridY = (y * height) / m_image.height;
 
-                grid.at(gridX, gridY) = grid.at(gridX, gridY) + fromRGBA(m_image.at(x, y));
-                counts.at(gridX, gridY) = counts.at(gridX, gridY) + 1;
+                grid.at(gridX, gridY) =
+                    grid.at(gridX, gridY) + fromRGBA(m_image.at(x, y));
+
+                counts.at(gridX, gridY) += 1;
             }
         }
 
         for (size_t x = 0; x < width; ++x) {
             for (size_t y = 0; y < height; ++y) {
-                grid.at(x, y) = grid.at(x, y) * (1.0 / counts.at(x, y));
+                if (counts.at(x, y) > 0) {
+                    grid.at(x, y) =
+                        grid.at(x, y) * (1.0 / counts.at(x, y));
+                }
             }
         }
 

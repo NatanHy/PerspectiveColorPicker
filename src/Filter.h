@@ -23,7 +23,8 @@ public:
 
     void setTags(std::unordered_set<std::string> tags) {
         m_tags = tags;
-        
+        m_disallowedTags.clear();
+
         for (const auto& x : TAGS) {
             if (!tags.count(x)) {
                 m_disallowedTags.insert(x);

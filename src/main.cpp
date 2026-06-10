@@ -23,6 +23,21 @@ enum class View {
     Image
 };
 
+struct GridInfo {
+    // Size of resulting build size
+    int blockWidth, blockHeight;
+    int beginX = 0, beginY = 0, endX = 0, endY = 0;
+
+    // Grids for avg RGBs and resulting sequencesx
+    Grid<Vec3> avgGrid;
+    Grid<TextureSequence> seqGrid;
+};
+
+struct Zoom {
+    double mouseX = 0.0, mouseY = 0.0;
+    int level = 0;
+};
+
 class GUIState {
     public:
     GUIState(const TextureParser parser) :
@@ -34,38 +49,9 @@ class GUIState {
 
     void update() {
         updateParser();
-        imgChanged = true;
 
         if (currentView == View::Image && imgPath != "") {
-            std::cout << "Loading " << imgPath << std::endl;
-            m_imgParser.loadImage(imgPath);
-            
-            double ratio = (double)m_imgParser.height() / (double)m_imgParser.width();
-            m_imgWidth = imgSize;
-            m_imgHeight = (int)std::ceil(((double)m_imgWidth * ratio));
-
-            m_avgGrid = m_imgParser.averageRGBS(m_imgWidth, m_imgHeight);
-            m_seqGrid = Grid<TextureSequence>(m_imgWidth, m_imgHeight);
-
-            using std::chrono::high_resolution_clock;
-            using std::chrono::duration_cast;
-            using std::chrono::milliseconds;
-
-            auto t1 = high_resolution_clock::now();
-
-            #pragma omp parallel for collapse(2) firstprivate(m_optimizer)
-            for (int x = 0; x < m_imgWidth; x++) {
-                for (int y = 0 ; y < m_imgHeight; y++) {
-                    auto match = m_optimizer.getBestMatch(m_avgGrid.at(x, y), layers, imgLocalSearch);
-                    m_seqGrid.at(x, y) = std::move(match);
-                }
-            }
-
-            auto t2 = high_resolution_clock::now();
-            auto ms_int = duration_cast<milliseconds>(t2 - t1);
-            
-            std::cout << "Execution time: " << (double)ms_int.count() << "ms" << std::endl << std::endl;
-                    
+            updateGrid();                    
         } else {
             Vec3 rgb = {255.0*color[0], 255.0*color[1], 255.0*color[2]};
             m_best = m_optimizer.getBestMatch(rgb, layers);
@@ -86,12 +72,20 @@ class GUIState {
         return m_parser;
     }
 
-    const int imgWidth() const {
-        return m_imgWidth;
+    const int gridWidth() const {
+        return m_gridInfo.endX - m_gridInfo.beginX;
     }
 
-    const int imgHeight() const {
-        return m_imgHeight;
+    const int gridHeight() const {
+        return m_gridInfo.endY - m_gridInfo.beginY;
+    }
+
+    const int gridMaxWidth() const {
+        return m_gridInfo.blockWidth;
+    }
+
+    const int gridMaxHeight() const {
+        return m_gridInfo.blockHeight;
     }
 
     const TextureSequence& best() const {
@@ -103,7 +97,7 @@ class GUIState {
     }
 
     const TextureSequence seqAt(size_t x, size_t y) const {
-        return m_seqGrid.at(x, y);
+        return m_gridInfo.seqGrid.at(x + m_gridInfo.beginX, y + m_gridInfo.beginY);
     }
 
     void pollClipboard() {
@@ -128,20 +122,21 @@ class GUIState {
             update();
         }
     }
+    // Window
     View currentView;
 
+    // Settings
     int layers = 2;
     float variance = std::numeric_limits<float>::infinity();
     int numTransparent = 256;
     float color[3] = {1.0f, 0.0f, 0.0f};
-    std::string imgPath;
     int imgSize = 50;
     bool imgLocalSearch = false;
-
-    RenderTexture2D imgCache;
-    bool imgChanged = true;
-
+    Zoom zoom;
     std::array<bool, NUM_TAGS> checkedTags;
+
+    // Path to user-chosen image
+    std::string imgPath;
     
     private:
     void updateParser() {
@@ -166,21 +161,86 @@ class GUIState {
             m_parser.parseTextures();
         }
     }
+
+    void applyZoom()
+    {
+        const double zoomFactor = std::pow(0.5, zoom.level);
+
+        const double visibleW = m_gridInfo.blockWidth  * zoomFactor;
+        const double visibleH = m_gridInfo.blockHeight * zoomFactor;
+
+        // Convert normalized mouse pos from viewport-space to absolute grid-space
+        const double currentW = m_gridInfo.endX - m_gridInfo.beginX;
+        const double currentH = m_gridInfo.endY - m_gridInfo.beginY;
+
+        const double absMouseX = m_gridInfo.beginX + zoom.mouseX * currentW;
+        const double absMouseY = m_gridInfo.beginY + zoom.mouseY * currentH;
+
+        // Center the new window around that absolute point
+        const double rawBeginX = absMouseX - visibleW * 0.5;
+        const double rawBeginY = absMouseY - visibleH * 0.5;
+
+        m_gridInfo.beginX = std::clamp(rawBeginX, 0.0, (double)m_gridInfo.blockWidth);
+        m_gridInfo.beginY = std::clamp(rawBeginY, 0.0, (double)m_gridInfo.blockHeight);
+        m_gridInfo.endX   =  std::clamp(m_gridInfo.beginX + visibleW, 0.0, (double)m_gridInfo.blockWidth);
+        m_gridInfo.endY   =  std::clamp(m_gridInfo.beginY + visibleH, 0.0, (double)m_gridInfo.blockHeight);
+    }
+
+    void updateGrid() {
+        std::cout << "Loading " << imgPath << std::endl;
+            
+        m_imgParser.loadImage(imgPath);
+        
+        // Update image size
+        if (m_imgParser.width() >= m_imgParser.height()) {
+            double ratio = (double)m_imgParser.height() / (double)m_imgParser.width();
+            m_gridInfo.blockWidth = imgSize;
+            m_gridInfo.blockHeight = (int)std::round(((double)imgSize * ratio));
+        } else {
+            double ratio = (double)m_imgParser.width() / (double)m_imgParser.height();
+            m_gridInfo.blockHeight = imgSize;
+            m_gridInfo.blockWidth = (int)std::round(((double)imgSize * ratio));
+        }
+        
+        applyZoom();
+
+        using std::chrono::high_resolution_clock;
+        using std::chrono::duration_cast;
+        using std::chrono::milliseconds;
+        
+        auto t1 = high_resolution_clock::now();
+        
+        // Update grid sequences
+        m_gridInfo.avgGrid = m_imgParser.averageRGBS(m_gridInfo.blockWidth,  m_gridInfo.blockHeight);
+        m_gridInfo.seqGrid = Grid<TextureSequence>(m_gridInfo.blockWidth,  m_gridInfo.blockHeight);
+
+        #pragma omp parallel for collapse(2) firstprivate(m_optimizer)
+        for (int x = m_gridInfo.beginX; x < m_gridInfo.endX; x++) {
+            for (int y = m_gridInfo.beginY; y < m_gridInfo.endY; y++) {
+                auto match = m_optimizer.getBestMatch(m_gridInfo.avgGrid.at(x, y), layers, imgLocalSearch);
+                m_gridInfo.seqGrid.at(x, y) = std::move(match);
+            }
+        }
+        
+        auto t2 = high_resolution_clock::now();
+        auto ms_int = duration_cast<milliseconds>(t2 - t1);
+        std::cout << "Execution time: " << (double)ms_int.count() << "ms" << std::endl << std::endl;
+    }
     
+    // Objects for parsing and computing results
     TextureParser m_parser;
     ImageParser m_imgParser;
-    int m_imgWidth;
-    int m_imgHeight;
-    std::string mImgHash;
-
-    Grid<Vec3> m_avgGrid;
-    Grid<TextureSequence> m_seqGrid;
-
     Optimizer m_optimizer;
 
+    // Sequence info for color picker
     TextureSequence m_best;
     Vec3 m_seqColor;
     double m_error = 0;
+
+    // Image hash for clipboard
+    std::string mImgHash;
+
+    GridInfo m_gridInfo;
 };
 
 void drawNavbar(GUIState& state) {
@@ -265,42 +325,6 @@ void drawFilter(Renderer& renderer, GUIState& state) {
     
 }
 
-void createImgCache(Renderer& renderer, GUIState& state)
-{
-    int width = renderer.width();
-    int height = renderer.height();
-
-    state.imgCache = LoadRenderTexture(width, height);
-    SetTextureFilter(state.imgCache.texture, TEXTURE_FILTER_POINT);
-    rlSetBlendFactorsSeparate(RL_SRC_ALPHA, RL_ONE_MINUS_SRC_ALPHA, RL_ONE, RL_ONE, RL_FUNC_ADD, RL_BLEND_ALPHA);
-
-    BeginTextureMode(state.imgCache);
-    BeginBlendMode(RL_BLEND_CUSTOM_SEPARATE);
-    ClearBackground(WHITE);
-
-    for (size_t x = 0; x < state.imgWidth(); x++) {
-        for (size_t y = 0; y < state.imgHeight(); y++) {
-            auto seq = state.seqAt(x, y);
-            float px = x * 16;
-            float py = y * 16;
-
-            renderer.drawLayers(
-                px,
-                50 + py,
-                1,
-                seq,
-                0,
-                false
-            );
-        }
-    }
-
-    state.imgChanged = false;
-
-    EndBlendMode();
-    EndTextureMode();
-}
-
 void drawImage(Renderer& renderer, GUIState& state) {
     if (IsFileDropped()) {
         FilePathList files = LoadDroppedFiles();
@@ -314,9 +338,13 @@ void drawImage(Renderer& renderer, GUIState& state) {
         return;
     }
 
-    double scale = renderer.width() / (state.imgWidth() * 16.0);
-    for (size_t x = 0; x < state.imgWidth(); x++) {
-        for (size_t y = 0; y < state.imgHeight(); y++) {
+    double scale = std::min(
+        renderer.width() / (state.gridWidth() * 16.0), 
+        renderer.height() / (state.gridHeight() * 16.0)
+    );
+    
+    for (int x = 0; x < state.gridWidth(); x++) {
+        for (int y = 0; y < state.gridHeight(); y++) {
             auto seq = state.seqAt(x, y); 
             renderer.drawLayers(x * 16 * scale, 50 + y * 16 * scale, scale, seq, 0, false); 
         } 
@@ -325,12 +353,29 @@ void drawImage(Renderer& renderer, GUIState& state) {
     // --- Mouse picking ---
     Vector2 mouse = GetMousePosition();
     
-    int gridX = (int)(mouse.x / (16 * scale));
-    int gridY = (int)((mouse.y - 50) / (16 * scale));
+    double relX = mouse.x / (double)(16 * scale * state.gridWidth());
+    double relY = (mouse.y - 50) / (double)(16 * scale * state.gridHeight());
+
+    if (relX >= 0 && relX <= 1.0 && relY >= 0.0 && relY <= 1.0) {
+        if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
+            state.zoom = {relX, relY, state.zoom.level + 1};
+            state.update();
+        } else if (IsMouseButtonPressed(MOUSE_BUTTON_RIGHT)) {
+            state.zoom.level -= 1;
+            if (state.zoom.level < 0) {
+                state.zoom.level = 0;
+            } else {
+                state.update();
+            }
+        }
+    }
+
+    int gridX = (int)(relX * state.gridWidth());
+    int gridY = (int)(relY * state.gridHeight());
 
     // Check bounds
-    if (gridX >= 0 && gridX < (int)state.imgWidth() &&
-        gridY >= 0 && gridY < (int)state.imgHeight())
+    if (gridX >= 0 && gridX < (int)state.gridWidth() &&
+        gridY >= 0 && gridY < (int)state.gridHeight())
     {
         auto hoveredSeq = state.seqAt(gridX, gridY);
 
