@@ -2236,9 +2236,11 @@
         "full block"
     ],
     "rose_bush_bottom.png": [
-        "unused"
+        "cross"
     ],
-    "rose_bush_top.png": [],
+    "rose_bush_top.png": [
+        "cross"
+    ],
     "sand.png": [
         "full block"
     ],
@@ -2611,7 +2613,8 @@
         "full block"
     ],
     "sugar_cane.png": [
-        "cross"
+        "cross",
+        "TODO"
     ],
     "sunflower_back.png": [
         "unused"

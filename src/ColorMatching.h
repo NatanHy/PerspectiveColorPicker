@@ -100,15 +100,33 @@ class TextureSequence {
     }
 
     Vec3 blendRGB() const {
-        Vec3 accRGB = m_opaque.parsedTexture.avgRGB; 
+        Vec3 accRGB = srgbToLinear(m_opaque.parsedTexture.avgRGB);
 
         for (const auto& x : m_translucentSeq) {
             double a = x.parsedTexture.alphaRatio;
+            Vec3 layerLinear = srgbToLinear(x.parsedTexture.avgRGB);
             accRGB *= (1. - a);
-            accRGB += a * x.parsedTexture.avgRGB;
+            accRGB += a * layerLinear;
         }
 
-        return accRGB;
+        return linearToSrgb(accRGB);
+    }
+
+    Vec3 blendRGBDebug() const {
+        Vec3 accRGB = srgbToLinear(m_opaque.parsedTexture.avgRGB);
+
+        for (const auto& x : m_translucentSeq) {
+            std::cout << "acc: " << accRGB << std::endl;
+            std::cout << "trns: " << x.parsedTexture.avgRGB << " " << "alph: " << x.parsedTexture.alphaRatio << std::endl;
+            double a = x.parsedTexture.alphaRatio;
+            Vec3 layerLinear = srgbToLinear(x.parsedTexture.avgRGB);
+            accRGB *= (1. - a);
+            accRGB += a * layerLinear;
+        }
+
+        std::cout << "final: " << linearToSrgb(accRGB) << std::endl;
+
+        return linearToSrgb(accRGB);
     }
 
     Vec3 variance() const {
@@ -130,6 +148,28 @@ class TextureSequence {
     }
     
     private:
+    static inline double srgbToLinear(double c) {
+        // expects c in [0, 1]
+        if (c <= 0.04045)
+            return c / 12.92;
+        return std::pow((c + 0.055) / 1.055, 2.4);
+    }
+
+    static inline double linearToSrgb(double c) {
+        // expects c in [0, 1]
+        if (c <= 0.0031308)
+            return c * 12.92;
+        return 1.055 * std::pow(c, 1.0 / 2.4) - 0.055;
+    }
+
+    static inline Vec3 srgbToLinear(const Vec3& v) {
+        return Vec3(srgbToLinear(v.x), srgbToLinear(v.y), srgbToLinear(v.z));
+    }
+
+    static inline Vec3 linearToSrgb(const Vec3& v) {
+        return Vec3(linearToSrgb(v.x), linearToSrgb(v.y), linearToSrgb(v.z));
+    }
+
     TextureInfo m_opaque;
     std::vector<TextureInfo> m_translucentSeq;
     MutationInfo m_prevChange;

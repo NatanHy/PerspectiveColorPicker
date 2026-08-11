@@ -815,8 +815,8 @@ respawn_anchor_side4.png,1,full block
 respawn_anchor_top.png,3,full block,top,animated
 respawn_anchor_top_off.png,2,full block,top
 rooted_dirt.png,1,full block
-rose_bush_bottom.png,1,unused
-rose_bush_top.png,0
+rose_bush_bottom.png,1,cross
+rose_bush_top.png,1,cross
 sand.png,1,full block
 sandstone.png,1,full block
 sandstone_bottom.png,2,full block,bottom
@@ -941,7 +941,7 @@ structure_block_corner.png,1,full block
 structure_block_data.png,1,full block
 structure_block_load.png,1,full block
 structure_block_save.png,1,full block
-sugar_cane.png,1,cross
+sugar_cane.png,2,cross,TODO
 sunflower_back.png,1,unused
 sunflower_bottom.png,0
 sunflower_front.png,1,unused

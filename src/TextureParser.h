@@ -285,7 +285,7 @@ public:
                 
                 parsed.avgRGB = shade * Vec3({avgR, avgG, avgB});
                 parsed.varRGB = {varR, varG, varB};
-                parsed.alphaRatio = (double)sumA / (255.0 * (double)(count + numTransparent));
+                parsed.alphaRatio = (double)sumA / (double)(255.0 * tex.textureData.pixelCount());
                 parsed.numTransparent = numTransparent;
                 
                 tex.parsedTexture = parsed;

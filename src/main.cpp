@@ -48,16 +48,19 @@ class GUIState {
     }
 
     void update() {
-        updateParser();
+        updateParser();            
 
         if (currentView == View::Image && imgPath != "") {
-            updateGrid();                    
+            updateGrid(); 
         } else {
             Vec3 rgb = {255.0*color[0], 255.0*color[1], 255.0*color[2]};
             m_best = m_optimizer.getBestMatch(rgb, layers);
             m_error = m_best.error(color);
             m_seqColor = m_best.blendRGB();
         }
+
+        std::cout << std::endl << "AVG: " << std::endl;
+        m_best.blendRGBDebug();
     }
 
     Vec3 sequenceColor() {
@@ -297,7 +300,7 @@ void drawColorPicker(Renderer& renderer, GUIState& state) {
     ImGui::SliderInt("Allow transparent", &state.numTransparent, 0, 256);
     ImGui::SliderFloat("Variance", &state.variance, 0.0f, 10000.0f);
     
-    if (ImGui::Button("Apply Color"))
+    if (ImGui::Button("Apply aColor"))
     {
         state.update();
     }
@@ -357,10 +360,10 @@ void drawImage(Renderer& renderer, GUIState& state) {
     double relY = (mouse.y - 50) / (double)(16 * scale * state.gridHeight());
 
     if (relX >= 0 && relX <= 1.0 && relY >= 0.0 && relY <= 1.0) {
-        if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
+        if (IsKeyPressed(KEY_UP)) {
             state.zoom = {relX, relY, state.zoom.level + 1};
             state.update();
-        } else if (IsMouseButtonPressed(MOUSE_BUTTON_RIGHT)) {
+        } else if (IsKeyPressed(KEY_DOWN)) {
             state.zoom.level -= 1;
             if (state.zoom.level < 0) {
                 state.zoom.level = 0;
